@@ -4,16 +4,6 @@
 
 游戏表面上是前沿 AI 公司模拟经营：训练模型、融资、买卡、抢电、卖 API、做 benchmark、上市、操纵预期、签政府合同、收购产业链。实际上是让玩家在几年后看到 AI 产业新闻时产生不适感：技术能力怎样经由资本、基础设施和监管变成技术封建主义权力。
 
-## 当前重写目标
-
-本次重写合并了 5 个 issue：
-
-- #1：去除无机冯诺依曼机相关内容。仓库不再保留“无机冯诺依曼机生态”世界观接口，灭绝线中也改写为“自复制自动化工业”而非单独展开远未来机器生态。
-- #2：修正模型参数量与训练/推理基础设施设定。参数量不再是自由滑条，而受 DP / PP / TP / EP / CP / SP、集群通信、专家负载、上下文并行和工程 know-how 约束。
-- #3：建立跨奇点技术—经济—政治粗粒度模拟模型，用信心、预期、金融重定价、裁员过度和政策反应写出宏观变化。
-- #4：建立群体创作用想法 / 架构树协作规范，明确节点 ID、来源、贡献者、依赖、冲突和审阅流程。
-- #5：将仓库 Quartz 化，改造成可浏览的设计知识库。
-
 ## 推荐阅读方式
 
 1. GitHub Pages / Quartz 站点：给朋友和协作者浏览。
@@ -35,13 +25,20 @@ ordinary-ai-company-sim/
    ├─ 00-project-overview.md
    ├─ 01-collaboration-guide.md
    ├─ 99-issue-resolution-map.md
-   ├─ design/
-   ├─ endings/
-   ├─ worldview/
+   ├─ systems/
+   │  ├─ ai-training-sim/
+   │  ├─ macro-econ-politics/
+   │  └─ company-operations/
+   ├─ narrative/
+   │  ├─ endings/
+   │  └─ setting/
+   ├─ discussions/
    └─ templates/
 ```
 
-正文都在 `content/`。`README.md` 只做协作入口和部署说明，不再承载大段策划案。
+正文都在 `content/`。`README.md` 只做协作入口、稳定目录和部署说明，不记录阶段性改动；已处理 issue 见 `content/99-issue-resolution-map.md`。
+
+`systems/` 收玩家操作、资源、变量和系统反馈。`narrative/` 收剧情呈现、ASI 叙事、结局系统和世界设定背景。`discussions/` 收 issue、聊天记录和还没有提炼成正式节点的材料。
 
 ## 本地预览
 
@@ -71,7 +68,7 @@ baseUrl: NewEnglandSurvivorKing.github.io/ordinary-ai-company-sim
 
 ## 写作原则
 
-新增内容优先写成中等粒度节点，避免继续堆超长 Markdown。一个节点通常对应一个机制、变量、结局、冲突或世界观接口。
+新增内容优先写成中等粒度节点，避免继续堆超长 Markdown。一个节点通常对应一个机制、变量、结局、冲突或剧情/世界设定接口。未提炼的聊天和 issue 先进入 `discussions/`，稳定后再迁入 `systems/` 或 `narrative/`。
 
 每个重要节点必须有 frontmatter：
 
@@ -85,7 +82,7 @@ source: [U, L]
 contributors: [user, llm:gpt-5.5]
 created: 2026-07-01
 updated: 2026-07-01
-tags: [design/rnd, system/data]
+tags: [systems/ai-training-sim, system/data]
 depends_on: []
 conflicts_with: []
 related_endings: []

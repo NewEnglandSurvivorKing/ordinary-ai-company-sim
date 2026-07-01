@@ -7,7 +7,7 @@ source: [U, L]
 contributors: [user, llm:gpt-5.5]
 created: 2026-07-01
 updated: 2026-07-01
-tags: [design/economy, power]
+tags: [systems/macro-econ-politics, economy, power]
 depends_on: [REL-PRODUCT-001, MACRO-TEP-001]
 conflicts_with: []
 related_endings: [END-TECH-FEUDALISM, END-PUBLIC-TRANSITION, END-RESPECTED-TRANSITIONER]

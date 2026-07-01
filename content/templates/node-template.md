@@ -22,7 +22,7 @@ source: [U]
 contributors: [your-name]
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-tags: [design/example]
+tags: [systems/example]
 depends_on: []
 conflicts_with: []
 related_endings: []

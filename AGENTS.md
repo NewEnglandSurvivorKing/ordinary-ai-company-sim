@@ -13,9 +13,14 @@
 - `content/00-project-overview.md` - 项目总览，改核心定位时先看这里。
 - `content/01-collaboration-guide.md` - 协作规范、来源标记、节点状态和 ID 规则。
 - `content/99-issue-resolution-map.md` - 已合并 issue 与设定调整说明。
-- `content/design/` - 机制与系统设计节点，例如研发、数据、基础设施、经济、电力、产品发布。
-- `content/endings/` - 结局线与结局 DAG，新增或改动重大机制时要检查这里的影响。
-- `content/worldview/` - 世界观接口与后稀缺社会相关设定。
+- `content/systems/` - 游戏机制节点，例如研发、数据、基础设施、经济、电力、产品发布。
+  - `content/systems/ai-training-sim/` - AI 训练模拟器、科技树、模型规模、数据和评估。
+  - `content/systems/macro-econ-politics/` - 经济政治建模、产业链、监管和社会反馈。
+  - `content/systems/company-operations/` - 公司经营、发布、产品化和商业动作。
+- `content/narrative/` - 剧情、事件呈现、结局系统和世界设定背景。
+  - `content/narrative/endings/` - 结局线与结局 DAG，新增或改动重大机制时要检查这里的影响。
+  - `content/narrative/setting/` - 世界设定背景，不作为首页一级入口。
+- `content/discussions/` - issue、聊天记录和未提炼材料的暂存入口。
 - `content/templates/node-template.md` - 新增节点时优先复制这个模板。
 - `agent/` - Agent 按任务角色读取的工作提示词，不是游戏设定正文。
 - `quartz.config.yaml` - Quartz 站点配置、插件、主题、导航与部署 baseUrl。
@@ -47,6 +52,7 @@
 - `source` 必须说明来源：`U` 人类贡献者的原始想法，`L` LLM 整理，`M` 共同形成，`W` 既有世界观，`R` 现实参考，`TBD` 待确认。
 - `contributors`、`created`、`updated`、`tags`、`depends_on`、`conflicts_with`、`related_endings` 能填就填，不要让关系只存在于正文里。
 - 新增或改写机制时，说明它影响哪些变量、玩家选择、系统反馈和结局。
+- 未提炼的聊天、issue 和零散想法先进入 `content/discussions/`；没有人类明确确认时，不要把它们补写成正式机制。
 - 使用 Obsidian wikilink，例如 `[[ending-dag|结局 DAG]]`，不要随意换成裸 URL。
 - 保持作者语气：冷静、锋利、结构化，可以有文学性，但不要营销化、鸡汤化或玩梗化。
 - 所有文案修改都要保持高信息密度；不要用空洞过渡、套话、同义句堆叠或过度结构化来填充篇幅。
@@ -75,6 +81,7 @@
 - 不要新增没有来源、贡献者或关系指针的重要设定。
 - 不要只更新 Markdown 而完全不检查 Quartz 页面；如果没有构建或预览，要在交付时说明原因。
 - 不要在 `AGENTS.md` 中维护具体角色工作流；角色细则必须放在 `agent/<role>.md`。
+- 不要把最近改动、阶段性迁移或任务记录塞进 `README.md`；README 只放长期入口、稳定目录和运行方式。阶段性记录放 `content/99-issue-resolution-map.md` 或 `content/discussions/`。
 - 任何文档修改前都要有人类明确指令或确认；不能只因审阅建议、扫描结果或 Agent 自己判断就直接改文档。
 
 ## 容易踩的坑
@@ -82,6 +89,6 @@
 - Markdown 是唯一可信源；Quartz 页面、Obsidian 图谱和生成的 HTML 都不能反向覆盖 `content/`。
 - `quartz.config.yaml` 的 `ignorePatterns` 会忽略 `templates`，模板页不是公开内容入口。
 - Quartz 日期插件优先读 frontmatter 和 git；新文件未被 git 跟踪时，本地预览可能提示日期不准确。
-- 改设计节点时要同步检查 `content/endings/ending-dag.md` 和相关结局页，避免机制通向不存在或矛盾的结局。
+- 改机制节点时要同步检查 `content/narrative/endings/ending-dag.md` 和相关结局页，避免机制通向不存在或矛盾的结局。
 - 改首页入口、目录页或文件名时，要检查 wikilink、Quartz 导航、搜索和 GitHub Pages 构建。
 - 这个文件只放协作约定和高频注意事项；详细架构、业务设定长文和具体剧情规格应放到 `content/` 的相应节点里。

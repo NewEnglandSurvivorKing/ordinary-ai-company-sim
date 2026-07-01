@@ -1,14 +1,14 @@
 ---
-id: WORLD-INDEX-001
-title: 世界观接口
+id: NARRATIVE-SETTING-INDEX
+title: 世界设定
 type: hub
 status: canon-draft
 source: [U, L]
 contributors: [user, llm:gpt-5.5]
-tags: [worldview]
+tags: [narrative, setting]
 ---
 
-# 世界观接口
+# 世界设定
 
 当前仓库只保留与游戏直接相关的世界观接口。
 

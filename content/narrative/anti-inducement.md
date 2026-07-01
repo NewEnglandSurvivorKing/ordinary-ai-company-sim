@@ -7,7 +7,7 @@ source: [U, L]
 contributors: [user, llm:gpt-5.5]
 created: 2026-07-01
 updated: 2026-07-01
-tags: [design/narrative, anti-inducement]
+tags: [narrative, anti-inducement]
 depends_on: [ECON-POWER-001, END-DAG-001]
 conflicts_with: []
 related_endings: [END-TECH-FEUDALISM, END-ESCAPE-POSTSCARCITY, END-HUMAN-PET-WELFARE, END-HUMAN-EXTINCTION, END-RESPECTED-TRANSITIONER]

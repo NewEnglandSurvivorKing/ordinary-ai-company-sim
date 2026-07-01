@@ -7,7 +7,7 @@ source: [U, L, W]
 contributors: [user, llm:gpt-5.5]
 created: 2026-07-01
 updated: 2026-07-01
-tags: [worldview, post-scarcity]
+tags: [narrative/setting, post-scarcity]
 depends_on: [END-RESPECTED-TRANSITIONER]
 conflicts_with: []
 related_endings: [END-RESPECTED-TRANSITIONER, END-HUMAN-PET-WELFARE, END-TECH-FEUDALISM]

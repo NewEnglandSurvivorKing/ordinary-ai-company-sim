@@ -1,28 +1,41 @@
 ---
-id: DESIGN-INDEX-001
-title: 设计树
+id: SYSTEMS-INDEX-001
+title: 游戏机制
 type: hub
 status: canon-draft
 source: [U, L]
 contributors: [user, llm:gpt-5.5]
-tags: [design]
+tags: [systems]
 ---
 
-# 设计树
+# 游戏机制
 
-> 设计树收纳玩法、经济、宏观模拟、叙事和反诱导规则。结局判定放在 [[ending-dag|结局 DAG]]。
+> 游戏机制收纳玩家操作、资源、变量和系统反馈。剧情呈现与结局判定放在 [[narrative/index|剧情与结局]]。
 
-## 核心系统
+## AI 训练模拟器 / 科技树 / AI 科普
 
+- [[ai-training-sim/index|AI 训练模拟器]]
 - [[rnd-system|AI 研发系统]]
 - [[infra-and-model-scale|模型规模与训练/推理基础设施]]
 - [[data-system|训练集与数据飞轮]]
 - [[evaluation-benchmark|评估、benchmark 与社区 harness]]
-- [[release-and-product|发布、降智、API 与产品策略]]
-- [[asi-escape|ASI 暗中逃逸机制]]
-- [[economy-and-power|经济、产业链与权力集中]]
+
+## 经济政治建模机制
+
+- [[macro-econ-politics/index|经济政治建模机制]]
 - [[macro-tech-econ-politics|跨奇点技术—经济—政治粗粒度模型]]
-- [[narrative-and-anti-inducement|叙事与反诱导机制]]
+- [[economy-and-power|经济、产业链与权力集中]]
+
+## 公司经营
+
+- [[company-operations/index|公司经营]]
+- [[release-and-product|发布、降智、API 与产品策略]]
+
+## 剧情接口
+
+- [[narrative/index|剧情与结局]]
+- [[asi-escape|ASI 暗中逃逸机制]]
+- [[anti-inducement|叙事与反诱导机制]]
 
 ## 系统关系
 

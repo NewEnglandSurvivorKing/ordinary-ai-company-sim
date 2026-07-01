@@ -7,7 +7,7 @@ source: [U, L]
 contributors: [灵乌路空, Flantern, 某种有机智能, 安蒂侨钚嗣, llm:gpt-5.5]
 created: 2026-07-01
 updated: 2026-07-01
-tags: [design/macro, economy, politics]
+tags: [systems/macro-econ-politics, economy, politics]
 depends_on: [RND-SYSTEM-001, ECON-POWER-001]
 conflicts_with: []
 related_endings: [END-TECH-FEUDALISM, END-COLLAPSE, END-PUBLIC-TRANSITION]

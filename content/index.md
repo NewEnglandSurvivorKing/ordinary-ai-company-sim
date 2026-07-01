@@ -18,11 +18,10 @@ tags: [home]
 ## 入口
 
 - [[00-project-overview|项目总览]]
-- [[design/index|设计树]]
-- [[endings/index|结局 DAG]]
-- [[worldview/post-scarcity|后稀缺社会接口]]
+- [[systems/index|游戏机制]]
+- [[narrative/index|剧情与结局]]
+- [[discussions/index|讨论与 issue 暂存]]
 - [[01-collaboration-guide|协作规范]]
-- [[99-issue-resolution-map|Issue 合并说明]]
 
 ## 核心问题
 

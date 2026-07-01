@@ -7,7 +7,7 @@ source: [U, L]
 contributors: [user, llm:gpt-5.5]
 created: 2026-07-01
 updated: 2026-07-01
-tags: [design/rnd, system/model]
+tags: [systems/ai-training-sim, system/model]
 depends_on: [INFRA-SCALE-001, DATA-SYSTEM-001, EVAL-BENCH-001]
 conflicts_with: []
 related_endings: [END-RESPECTED-TRANSITIONER, END-TECH-FEUDALISM, END-ESCAPE-POSTSCARCITY, END-HUMAN-PET-WELFARE, END-HUMAN-EXTINCTION, END-COLLAPSE]

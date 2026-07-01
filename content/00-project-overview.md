@@ -36,15 +36,9 @@ tags: [core, overview]
 
 本项目不保留“无机冯诺依曼机生态”远未来世界观模块。相关远未来机器生态内容已从本仓库移除，避免项目主题发散。
 
-## 主要系统
+## 主要入口
 
-- [[rnd-system|AI 研发系统]]
-- [[infra-and-model-scale|模型规模与训练/推理基础设施]]
-- [[data-system|训练集与数据飞轮]]
-- [[evaluation-benchmark|评估、benchmark 与社区 harness]]
-- [[release-and-product|发布、降智、API 与产品策略]]
-- [[asi-escape|ASI 暗中逃逸机制]]
-- [[economy-and-power|经济、产业链与权力集中]]
-- [[macro-tech-econ-politics|跨奇点技术—经济—政治粗粒度模型]]
-- [[ending-dag|结局 DAG]]
-- [[post-scarcity|后稀缺社会接口]]
+- [[systems/index|游戏机制]]
+- [[narrative/index|剧情与结局]]
+- [[discussions/index|讨论与 issue 暂存]]
+- [[01-collaboration-guide|协作规范]]

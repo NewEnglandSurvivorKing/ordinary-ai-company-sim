@@ -155,7 +155,7 @@ function readableGraphTitleScore(node, degree, currentSlug) {
   if (node.id === currentSlug) return 1;
   if (node.id === "index") return 0.96;
   if (node.id.endsWith("/index")) return 0.9;
-  if (/^00-|overview|project-overview|ending-dag|post-scarcity/.test(node.id)) return 0.86;
+  if (/^00-|overview|project-overview|ending-dag/.test(node.id)) return 0.86;
   if (degree >= 4) return 0.78;
   if (/总览|首页|设计树|结局|接口|系统|模型|规范|说明/.test(node.text)) return 0.74;
   return 0.38 + Math.min(degree, 3) * 0.08;
