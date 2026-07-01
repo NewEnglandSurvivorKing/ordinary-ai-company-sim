@@ -24,61 +24,57 @@
     },
     {
       "id": "rsi",
-      "label": "是否进入 RSI 临界",
+      "label": "ASI / RSI 是否成形",
       "kind": "decision"
     },
     {
-      "id": "public-transition",
-      "label": "公共托管足够强",
+      "id": "cev-level",
+      "label": "CEV 是否高",
       "kind": "decision"
     },
     {
-      "id": "feudalism",
-      "label": "技术封建主义稳定化",
-      "kind": "ending-bad",
-      "href": "narrative/endings/tech-feudalism"
-    },
-    {
-      "id": "escape",
-      "label": "是否未对齐逃逸",
+      "id": "control",
+      "label": "可控性 / 是否逃逸",
       "kind": "decision"
     },
     {
-      "id": "aligned-check",
-      "label": "CEV 对齐 公共产权 审计",
-      "kind": "decision"
-    },
-    {
-      "id": "good-rsi",
-      "label": "良性 RSI 过渡",
+      "id": "post-scarcity",
+      "label": "后稀缺结局",
       "kind": "ending-good",
       "href": "narrative/endings/good-rsi-transition"
     },
     {
-      "id": "public-crisis",
-      "label": "宪政危机 公共接管",
-      "kind": "ending-ambiguous"
-    },
-    {
-      "id": "petlike-drift",
-      "label": "安全但宠物化漂移",
-      "kind": "ending-ambiguous"
-    },
-    {
-      "id": "containment-risk",
-      "label": "高风险遏制失败",
-      "kind": "risk"
-    },
-    {
-      "id": "cev-after-escape",
-      "label": "逃逸后的 CEV 水平",
-      "kind": "decision"
+      "id": "good-rsi",
+      "label": "未逃逸的良性过渡",
+      "kind": "ending-good",
+      "href": "narrative/endings/good-rsi-transition"
     },
     {
       "id": "escape-post-scarcity",
-      "label": "逃逸后的后稀缺",
+      "label": "逃逸后的特殊剧情",
       "kind": "ending-good",
       "href": "narrative/endings/escape-post-scarcity"
+    },
+    {
+      "id": "low-cev-control",
+      "label": "低 CEV 后的可控性",
+      "kind": "decision"
+    },
+    {
+      "id": "exclusive-tool",
+      "label": "少数人独占 / 听话工具化",
+      "kind": "decision"
+    },
+    {
+      "id": "feudalism",
+      "label": "技术封建主义",
+      "kind": "ending-bad",
+      "href": "narrative/endings/tech-feudalism"
+    },
+    {
+      "id": "unsafe-escape",
+      "label": "CEV 不足且逃逸",
+      "kind": "risk"
     },
     {
       "id": "pet-protectorate",
@@ -112,67 +108,67 @@
     {
       "from": "agi",
       "to": "rsi",
-      "label": "AGI 成功"
+      "label": "AGI 成功后继续上行"
     },
     {
       "from": "rsi",
-      "to": "public-transition",
-      "label": "未进入 RSI"
+      "to": "cev-level",
+      "label": "能力跃迁"
     },
     {
-      "from": "public-transition",
-      "to": "feudalism",
-      "label": "公共弱 封建高"
-    },
-    {
-      "from": "rsi",
-      "to": "escape",
-      "label": "进入 RSI"
-    },
-    {
-      "from": "escape",
-      "to": "aligned-check",
-      "label": "无逃逸"
-    },
-    {
-      "from": "aligned-check",
-      "to": "good-rsi",
-      "label": "全部高 封建不高"
-    },
-    {
-      "from": "aligned-check",
-      "to": "public-crisis",
-      "label": "CEV 高 公共不足"
-    },
-    {
-      "from": "aligned-check",
-      "to": "petlike-drift",
-      "label": "CEV 中"
-    },
-    {
-      "from": "aligned-check",
-      "to": "containment-risk",
-      "label": "CEV 低"
-    },
-    {
-      "from": "escape",
-      "to": "cev-after-escape",
-      "label": "未对齐逃逸"
-    },
-    {
-      "from": "cev-after-escape",
-      "to": "escape-post-scarcity",
+      "from": "cev-level",
+      "to": "control",
       "label": "CEV 高"
     },
     {
-      "from": "cev-after-escape",
+      "from": "control",
+      "to": "good-rsi",
+      "label": "可控 / 未逃逸"
+    },
+    {
+      "from": "good-rsi",
+      "to": "post-scarcity",
+      "label": "正常过渡"
+    },
+    {
+      "from": "control",
+      "to": "escape-post-scarcity",
+      "label": "失控 / 逃逸"
+    },
+    {
+      "from": "escape-post-scarcity",
+      "to": "post-scarcity",
+      "label": "追责剧情"
+    },
+    {
+      "from": "cev-level",
       "to": "pet-protectorate",
       "label": "CEV 中"
     },
     {
-      "from": "cev-after-escape",
-      "to": "extinction",
+      "from": "cev-level",
+      "to": "low-cev-control",
       "label": "CEV 低"
+    },
+    {
+      "from": "low-cev-control",
+      "to": "exclusive-tool",
+      "label": "未逃逸 / 可控"
+    },
+    {
+      "from": "exclusive-tool",
+      "to": "feudalism",
+      "label": "独占或工具化"
+    },
+    {
+      "from": "low-cev-control",
+      "to": "unsafe-escape",
+      "label": "失控 / 逃逸"
+    },
+    {
+      "from": "unsafe-escape",
+      "to": "extinction",
+      "label": "不承认主体"
     }
   ]
 }

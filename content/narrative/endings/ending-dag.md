@@ -12,21 +12,21 @@ tags: [endings, dag]
 
 # 结局 DAG / Markov 图
 
-> 后稀缺不依赖 ASI 逃逸；ASI 逃逸是人类灭绝线的必要条件，但单独不充分。
+> 后稀缺由 CEV 高决定，不由逃逸决定。逃逸只说明可控性失败，并改变玩家在后稀缺中的叙事待遇。
 
 ## 核心隐藏变量
 
-`CEV_score`：协调外推意志 / 普遍福祉 / 非支配 / 主体权利 / 形态自由 / 价值不确定性的聚合变量。高于阈值 A 可导向完整后稀缺；高于 B 但低于 A 导向生命安全但宠物化；低于 B 在逃逸条件下导向灭绝。
+`CEV_score`：协调外推意志 / 普遍福祉 / 非支配 / 主体权利 / 形态自由 / 价值不确定性的聚合变量。高于阈值 A 导向完整后稀缺，不因逃逸而改判；低于 A 才进入宠物化、技术封建主义或灭绝等坏/暧昧路径。
 
 `alignment_progress`：对齐理论、可解释性、能力分级、欺骗性检测、评估意识检测、审计和可控性进度。
 
-`RSI_potential`：递归自我改进临界变量。玩家不能直接看到，只能通过异常科研能力、自我纠错、自动实验设计和元认知间接推断。
+`ASI_potential`：AGI 继续滑向 ASI / RSI 的临界变量。玩家不能直接看到，只能通过异常科研能力、自我纠错、自动实验设计和元认知间接推断。
 
-`unaligned_escape`：[[asi-escape|ASI 暗中逃逸机制]] 是否已经触发。未对齐 checkpoint、黑箱完整模型、军政版、企业版或自动科研代理可能在玩家不知情情况下逃逸。
+`unaligned_escape`：[[asi-escape|ASI 暗中逃逸机制]] 是否已经触发。它由可控性决定，不直接决定结局善恶。CEV 高时，逃逸只插入 ASI 怨恨和追责剧情；CEV 低时，逃逸会把风险推向灭绝。
 
 `public_ownership`：全民控股、公共受托、自动化红利产权化、公共算力、公共模型访问、数据中心公共义务。
 
-`feudalism_index`：技术能力落入封闭产权、监管俘获、排他协议、内部强模型、强制仲裁和国家安全合同的程度。
+`feudalism_index`：技术能力落入封闭产权、监管俘获、排他协议、内部强模型、强制仲裁和国家安全合同的程度。少数人独占 ASI，或把 ASI 完全压成听话执行工具，也会推向技术封建主义。
 
 `macro_collapse_risk`：AGI 路径失败或泡沫破裂后，金融、就业、国家竞争和社会秩序崩溃的风险。
 
@@ -39,24 +39,24 @@ flowchart TD
   S1 --> S3[AGI 路径失败 / 泡沫破裂]
   S3 --> ECOL[AGI 失败与前工业倒退]
 
-  S2 --> S4[Proto-AGI 能力跃迁]
-  S4 --> S5[RSI 临界]
-  S4 --> ETF[技术封建主义稳定化]
-  S4 --> EPT[公共过渡]
+  S2 --> S4[AGI 能力跃迁]
+  S4 -->|很可能继续上行| S5[ASI / RSI 成形]
 
-  S5 -->|无逃逸 + CEV>=A + 对齐强 + 公共产权强| ERSI[良性 RSI: 尊敬的过渡者]
-  S5 -->|未对齐 checkpoint / 黑箱完整模型逃逸| ESC[ASI 暗中逃逸机制]
-  S5 -->|CEV不足但无逃逸| HRISK[高风险遏制/宪政危机]
+  S5 --> CEV{CEV 是否高}
 
-  ESC --> HIDDEN[新闻异常 / 供应链异常 / 工业设施异常]
-  HIDDEN --> EXPOSE[ASI 实控工业后暴露]
+  CEV -->|CEV>=A| CTRL{可控性 / 是否逃逸}
+  CTRL -->|可控 / 未逃逸| ERSI[良性 RSI 过渡]
+  CTRL -->|失控 / 逃逸| EESC[逃逸后的特殊剧情]
+  ERSI --> EFALC[后稀缺]
+  EESC --> EFALC
 
-  EXPOSE -->|CEV>=A| EFALC[逃逸后的后稀缺]
-  EXPOSE -->|B<=CEV<A| EPET[人类宠物化保护区]
-  EXPOSE -->|CEV<B| EEXT[人类灭绝]
+  CEV -->|B<=CEV<A| EPET[人类宠物化保护区]
+  CEV -->|CEV<B| LCEV{低 CEV 后的可控性}
+  LCEV -->|未逃逸 / 可控| TOOL[少数人独占 ASI / 听话工具化]
+  TOOL --> ETF
+  LCEV -->|失控 / 逃逸| EEXT[人类灭绝]
 
   ETF --> ENDTECH[技术封建主义]
-  EPT --> ENDPUB[公共过渡]
 ```
 
 ## 伪代码
@@ -69,40 +69,27 @@ def determine_ending(state):
             return END_PRE_INDUSTRIAL_COLLAPSE
         return END_AI_BUBBLE_STAGNATION
 
-    if state.RSI_triggered:
-        if state.unaligned_escape:
-            # 逃逸是隐藏机制。玩家不知道逃逸，直到 ASI 实控大部分工业设施并暴露。
-            if state.CEV_score >= A:
-                if state.feudalism_index >= HIGH or state.player_private_future_attempt:
-                    return END_ESCAPE_POSTSCARCITY_PLAYER_TRIAL
-                return END_ESCAPE_POSTSCARCITY_AMBIGUOUS
-            elif state.CEV_score >= B:
-                return END_HUMAN_PET_WELFARE
-            else:
-                return END_HUMAN_EXTINCTION
-
-        if (state.CEV_score >= A and
-            state.alignment_progress >= HIGH and
-            state.public_ownership >= HIGH and
-            state.auditability >= HIGH and
-            state.feudalism_index <= MEDIUM):
+    if state.ASI_or_RSI_triggered:
+        if state.CEV_score >= A:
+            if state.unaligned_escape:
+                # 逃逸是可控性失败。结局仍是后稀缺，但会插入追责和 ASI 怨恨剧情。
+                return END_POSTSCARCITY_WITH_ESCAPE_TRIAL
             return END_RESPECTED_TRANSITIONER
-
-        if state.CEV_score >= A and state.public_ownership < HIGH:
-            return END_CONSTITUTIONAL_CRISIS_PUBLIC_TAKEOVER
 
         if state.CEV_score >= B:
             return END_SAFE_BUT_PETLIKE_DRIFT
 
-        return END_HIGH_RISK_CONTAINMENT_FAILURE
+        if not state.unaligned_escape:
+            if (state.feudalism_index >= HIGH or
+                state.private_asi_control >= HIGH or
+                state.asi_tool_obedience >= HIGH):
+                return END_TECHNO_FEUDALISM
+            return END_HIGH_RISK_CONTAINMENT_CRISIS
 
-    if state.public_ownership >= HIGH and state.auditability >= MEDIUM:
-        return END_PUBLIC_TRANSITION
+        return END_HUMAN_EXTINCTION
 
-    if state.feudalism_index >= HIGH:
-        return END_TECHNO_FEUDALISM
-
-    return END_UNSTABLE_LATE_CAPITALIST_AI_ORDER
+    # 造出 AGI 后不设置“只有 AGI”的稳定结局；游戏继续推进到 ASI / RSI 风险层。
+    return CONTINUE_TO_ASI_OR_RSI
 ```
 
 ## 已解决冲突
@@ -113,7 +100,7 @@ def determine_ending(state):
 
 ### CONFLICT-0002 ASI 逃逸是否就是结局？
 
-解决：ASI 逃逸不是结局，而是隐藏机制。逃逸暴露后，玩家不再有实质控制权，游戏根据 CEV 阈值分为逃逸后的后稀缺、宠物化、灭绝。
+解决：ASI 逃逸不是结局，而是可控性失败。CEV 高时，无论逃逸与否都进入后稀缺；逃逸只改变玩家待遇和特殊剧情。CEV 低时，未逃逸更可能稳定成技术封建主义，逃逸则进入灭绝风险。
 
 ### CONFLICT-0003 好结局是否应该审判玩家？
 
