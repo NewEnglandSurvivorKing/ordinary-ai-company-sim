@@ -10,7 +10,7 @@ updated: 2026-07-01
 tags: [design/eval, benchmark]
 depends_on: [RND-SYSTEM-001, DATA-SYSTEM-001]
 conflicts_with: []
-related_endings: [END-TECH-FEUDALISM, END-ASI-ESCAPE]
+related_endings: [END-TECH-FEUDALISM, END-ESCAPE-POSTSCARCITY, END-HUMAN-PET-WELFARE, END-HUMAN-EXTINCTION]
 ---
 
 # 评估、benchmark 与社区 harness

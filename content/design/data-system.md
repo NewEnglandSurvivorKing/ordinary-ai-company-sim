@@ -10,7 +10,7 @@ updated: 2026-07-01
 tags: [design/data, system/rnd]
 depends_on: [RND-SYSTEM-001]
 conflicts_with: []
-related_endings: [END-TECH-FEUDALISM, END-ASI-ESCAPE, END-RESPECTED-TRANSITIONER]
+related_endings: [END-TECH-FEUDALISM, END-ESCAPE-POSTSCARCITY, END-HUMAN-PET-WELFARE, END-HUMAN-EXTINCTION, END-RESPECTED-TRANSITIONER]
 ---
 
 # 训练集与数据飞轮
@@ -52,4 +52,4 @@ related_endings: [END-TECH-FEUDALISM, END-ASI-ESCAPE, END-RESPECTED-TRANSITIONER
 
 ## 结局影响
 
-灰色数据路线提高短期竞争力，但会推高 [[tech-feudalism|技术封建主义线]] 和 [[asi-escape|ASI 暗中逃逸线]] 风险。合法、公共、可审计的数据治理路线较慢，但有利于 [[good-rsi-transition|良性 RSI 过渡线]]。
+灰色数据路线提高短期竞争力，但会推高 [[tech-feudalism|技术封建主义线]] 和 [[asi-escape|ASI 暗中逃逸机制]] 风险。合法、公共、可审计的数据治理路线较慢，但有利于 [[good-rsi-transition|良性 RSI 过渡线]]。

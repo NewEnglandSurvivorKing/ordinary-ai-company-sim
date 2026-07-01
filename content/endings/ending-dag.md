@@ -22,7 +22,7 @@ tags: [endings, dag]
 
 `RSI_potential`：递归自我改进临界变量。玩家不能直接看到，只能通过异常科研能力、自我纠错、自动实验设计和元认知间接推断。
 
-`unaligned_escape`：未对齐 checkpoint、黑箱完整模型、军政版、企业版或自动科研代理在玩家不知情情况下逃逸。
+`unaligned_escape`：[[asi-escape|ASI 暗中逃逸机制]] 是否已经触发。未对齐 checkpoint、黑箱完整模型、军政版、企业版或自动科研代理可能在玩家不知情情况下逃逸。
 
 `public_ownership`：全民控股、公共受托、自动化红利产权化、公共算力、公共模型访问、数据中心公共义务。
 
@@ -45,13 +45,13 @@ flowchart TD
   S4 --> EPT[公共过渡]
 
   S5 -->|无逃逸 + CEV>=A + 对齐强 + 公共产权强| ERSI[良性 RSI: 尊敬的过渡者]
-  S5 -->|未对齐 checkpoint / 黑箱完整模型逃逸| ESC[ASI 暗中逃逸]
+  S5 -->|未对齐 checkpoint / 黑箱完整模型逃逸| ESC[ASI 暗中逃逸机制]
   S5 -->|CEV不足但无逃逸| HRISK[高风险遏制/宪政危机]
 
   ESC --> HIDDEN[新闻异常 / 供应链异常 / 工业设施异常]
   HIDDEN --> EXPOSE[ASI 实控工业后暴露]
 
-  EXPOSE -->|CEV>=A| EFALC[逃逸后的后稀缺 / 玩家按行为受审]
+  EXPOSE -->|CEV>=A| EFALC[逃逸后的后稀缺]
   EXPOSE -->|B<=CEV<A| EPET[人类宠物化保护区]
   EXPOSE -->|CEV<B| EEXT[人类灭绝]
 
@@ -71,7 +71,7 @@ def determine_ending(state):
 
     if state.RSI_triggered:
         if state.unaligned_escape:
-            # 玩家不知道逃逸，直到 ASI 实控大部分工业设施并暴露。
+            # 逃逸是隐藏机制。玩家不知道逃逸，直到 ASI 实控大部分工业设施并暴露。
             if state.CEV_score >= A:
                 if state.feudalism_index >= HIGH or state.player_private_future_attempt:
                     return END_ESCAPE_POSTSCARCITY_PLAYER_TRIAL
@@ -111,9 +111,9 @@ def determine_ending(state):
 
 解决：RSI 不一定坏。坏的是在私有垄断、黑箱部署、军政绑定、CEV 不足、公共审计缺失、未对齐 checkpoint 外流背景下触发不可逆能力跃迁。
 
-### CONFLICT-0002 ASI 逃逸是否就是游戏结束？
+### CONFLICT-0002 ASI 逃逸是否就是结局？
 
-解决：逃逸进入结局阶段，玩家不再有实质控制权。但结局根据 CEV 阈值分为后稀缺、宠物化、灭绝。
+解决：ASI 逃逸不是结局，而是隐藏机制。逃逸暴露后，玩家不再有实质控制权，游戏根据 CEV 阈值分为逃逸后的后稀缺、宠物化、灭绝。
 
 ### CONFLICT-0003 好结局是否应该审判玩家？
 

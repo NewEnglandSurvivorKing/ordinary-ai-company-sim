@@ -8,7 +8,7 @@ contributors: [user, llm:gpt-5.5]
 created: 2026-07-01
 updated: 2026-07-01
 tags: [endings/bad, asi, extinction]
-depends_on: [END-ASI-ESCAPE]
+depends_on: [ASI-ESCAPE-MECHANIC]
 conflicts_with: []
 ---
 

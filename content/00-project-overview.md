@@ -32,7 +32,7 @@ tags: [core, overview]
 
 本项目不做“暴力=权力”的爽点。不提供无人机海、斩首行动、暴力镇压等直接军事玩法。政商勾结主要限定在金融、法律监管、采购、基础设施许可、国家安全合同和信息控制。
 
-本项目不把 ASI 逃逸写成胜利奖励。逃逸进入结局阶段后，玩家基本失去控制权。
+本项目不把 ASI 逃逸写成胜利奖励。逃逸暴露后，玩家基本失去控制权。
 
 本项目不保留“无机冯诺依曼机生态”远未来世界观模块。相关远未来机器生态内容已从本仓库移除，避免项目主题发散。
 
@@ -43,6 +43,7 @@ tags: [core, overview]
 - [[data-system|训练集与数据飞轮]]
 - [[evaluation-benchmark|评估、benchmark 与社区 harness]]
 - [[release-and-product|发布、降智、API 与产品策略]]
+- [[asi-escape|ASI 暗中逃逸机制]]
 - [[economy-and-power|经济、产业链与权力集中]]
 - [[macro-tech-econ-politics|跨奇点技术—经济—政治粗粒度模型]]
 - [[ending-dag|结局 DAG]]

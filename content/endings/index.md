@@ -16,11 +16,15 @@ tags: [endings]
 
 - [[ending-dag|结局 DAG / Markov 图]]
 - [[good-rsi-transition|良性 RSI 过渡线]]
-- [[asi-escape|ASI 暗中逃逸线]]
+- [[escape-post-scarcity|逃逸后的后稀缺]]
 - [[tech-feudalism|技术封建主义线]]
 - [[pet-protectorate|人类宠物化保护区]]
 - [[extinction|人类灭绝线]]
 - [[collapse|AGI 失败与前工业倒退]]
+
+## 相关机制
+
+- [[asi-escape|ASI 暗中逃逸机制]]
 
 ## 核心判定原则
 

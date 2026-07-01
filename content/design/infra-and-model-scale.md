@@ -10,7 +10,7 @@ updated: 2026-07-01
 tags: [design/rnd, infra, model-scale]
 depends_on: [RND-SYSTEM-001]
 conflicts_with: [OLD-FREE-PARAM-SLIDER]
-related_endings: [END-COLLAPSE, END-ASI-ESCAPE, END-RESPECTED-TRANSITIONER]
+related_endings: [END-COLLAPSE, END-ESCAPE-POSTSCARCITY, END-HUMAN-PET-WELFARE, END-HUMAN-EXTINCTION, END-RESPECTED-TRANSITIONER]
 ---
 
 # 模型规模与训练/推理基础设施

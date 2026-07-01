@@ -10,7 +10,7 @@ updated: 2026-07-01
 tags: [design/narrative, anti-inducement]
 depends_on: [ECON-POWER-001, END-DAG-001]
 conflicts_with: []
-related_endings: [END-TECH-FEUDALISM, END-ASI-ESCAPE, END-RESPECTED-TRANSITIONER]
+related_endings: [END-TECH-FEUDALISM, END-ESCAPE-POSTSCARCITY, END-HUMAN-PET-WELFARE, END-HUMAN-EXTINCTION, END-RESPECTED-TRANSITIONER]
 ---
 
 # 叙事与反诱导机制
@@ -33,7 +33,7 @@ related_endings: [END-TECH-FEUDALISM, END-ASI-ESCAPE, END-RESPECTED-TRANSITIONER
 
 不给军事爽点。不提供无人机海、斩首行动、暴力镇压、武装政变等玩家可操作选项。
 
-ASI 逃逸进入结局后不再给玩家“统治世界”的体验。玩家只能看到暴露、传唤、黑屏、结局估算和自身处境。
+ASI 逃逸暴露后不再给玩家“统治世界”的体验。玩家只能看到暴露、传唤、黑屏、结局估算和自身处境。
 
 强策略必须伴随负反馈。股价上涨时，屏幕边缘可以滚动失业、贫困死亡、入口岗位消失。拿到政府合同时，可能收到研究员辞职信。收购芯片厂后，反垄断调查消耗资源。
 

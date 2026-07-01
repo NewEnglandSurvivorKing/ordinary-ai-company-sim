@@ -10,7 +10,7 @@ updated: 2026-07-01
 tags: [design/rnd, system/model]
 depends_on: [INFRA-SCALE-001, DATA-SYSTEM-001, EVAL-BENCH-001]
 conflicts_with: []
-related_endings: [END-RESPECTED-TRANSITIONER, END-TECH-FEUDALISM, END-ASI-ESCAPE, END-COLLAPSE]
+related_endings: [END-RESPECTED-TRANSITIONER, END-TECH-FEUDALISM, END-ESCAPE-POSTSCARCITY, END-HUMAN-PET-WELFARE, END-HUMAN-EXTINCTION, END-COLLAPSE]
 ---
 
 # AI 研发系统
@@ -83,4 +83,4 @@ idea 提出速度取决于研究员数量、研究员质量、工作环境、公
 
 在没有稳定训练技术时使用激进 optimizer、并行策略或架构，有训爆风险。失败后只能回退到上一个 checkpoint，损失 FLOPs、时间、现金和士气。
 
-强模型用于内部研发会加速 idea 产生，但也提高 `RSI_potential` 和 `escape_risk`。如果内部完整能力版、军政版或自动科研代理未被审计，后期可能进入 [[asi-escape|ASI 暗中逃逸线]]。
+强模型用于内部研发会加速 idea 产生，但也提高 `RSI_potential` 和 `escape_risk`。如果内部完整能力版、军政版或自动科研代理未被审计，后期可能进入 [[asi-escape|ASI 暗中逃逸机制]]。
