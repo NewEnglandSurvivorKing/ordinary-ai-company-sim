@@ -6,11 +6,11 @@ status: draft
 source: [U, L]
 contributors: [user, EDLSDPSY, "如更云如更", "llm:codex"]
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-07-02
 tags: [discussions, endings, systems/macro-econ-politics, systems/ai-training-sim]
 depends_on: [END-DAG-001, END-TECH-FEUDALISM, END-HUMAN-PET-WELFARE, MACRO-TEP-001, INFRA-SCALE-001]
 conflicts_with: []
-related_endings: [END-TECH-FEUDALISM, END-HUMAN-PET-WELFARE, END-AGING-OUT, END-COLLAPSE]
+related_endings: [END-TECH-FEUDALISM, END-VIOLENT-FEUDAL-WAR, END-HUMAN-PET-WELFARE, END-AGING-OUT, END-COLLAPSE]
 ---
 
 # 结局分支细化、技术封建表现型与国别基础变量
@@ -23,14 +23,14 @@ related_endings: [END-TECH-FEUDALISM, END-HUMAN-PET-WELFARE, END-AGING-OUT, END-
 
 “熬老头”不应直接并入人类宠物化保护区。讨论中强调二者主导者不同：宠物化更接近 ASI 或自动化文明主导的安全废黜；熬老头更接近政府主导的旧制度维稳，可以强调人类会继续自然老死，没有真正后稀缺、寿命突破和形态自由。
 
-社会范式崩坏可以作为坏结局表现：直接武力夺权、巨头互斗、军政接管或大吃鸡式崩坏。它暂时可以先进入结局层，不必立刻新增战斗系统。
+社会范式崩坏可以作为坏结局表现：直接武力夺权、巨头互斗、军政接管或大吃鸡式崩坏。后续修正为：这不应挂在无 AGI 的前工业倒退结局下，而应作为 [[violent-feudal-war|暴力技术封建与巨头混战]]。它发生在多个 ASI 和完整自动化工厂已经存在之后，工业产能不降反升，但人类人口大幅下降。
 
 讨论还提出若干基础机制变量：国别差异，尤其 CN 和 US 的制度环境不同；汇率，尤其 RMB 对美元；不同精度算力；以及这些变量如何影响融资、购买算力、电力、模型强度、部署规模和国家禁令。
 
 ## 待确认问题
 
 - 技术封建的温和/暴力表现型是否需要成为独立结局，还是先作为同一结局下的呈现差异。
-- “社会范式崩坏”是否独立成页，还是暂时挂在 [[collapse|AGI 失败与前工业倒退]] 下。
+- 暴力技术封建与巨头混战已经独立成页；后续需要细化多 ASI、自动化工厂和人口下降的具体呈现。
 - 国别差异后续是否只做 CN/US，还是扩展为更抽象的法域配置。
 - 不同精度算力是否进入可见资源面板，还是先作为训练/推理基础设施的隐藏修正。
 

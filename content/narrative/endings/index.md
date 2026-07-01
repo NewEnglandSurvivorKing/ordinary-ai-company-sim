@@ -5,7 +5,7 @@ type: hub
 status: canon-draft
 source: [U, L]
 contributors: [user, llm:gpt-5.5]
-updated: 2026-07-01
+updated: 2026-07-02
 tags: [endings]
 ---
 
@@ -23,6 +23,7 @@ tags: [endings]
 - [[good-rsi-transition|良性 RSI 过渡线]]
 - [[escape-post-scarcity|逃逸后的后稀缺特殊剧情]]
 - [[tech-feudalism|技术封建主义线]]
+- [[violent-feudal-war|暴力技术封建与巨头混战]]
 - [[pet-protectorate|人类宠物化保护区]]
 - [[aging-out|政府主导的熬老头结局]]
 - [[extinction|人类灭绝线]]
@@ -37,5 +38,7 @@ tags: [endings]
 RSI 不一定是坏事。ASI 逃逸也不必然导向灭绝。后稀缺不要求逃逸；只要 `CEV_score >= A`，无论是否逃逸，都进入后稀缺结局。区别在于：未逃逸是可控的良性过渡；逃逸说明玩家此前制造了不可审计风险，会插入 ASI 对玩家的怨恨、追责和特殊剧情。
 
 技术封建主义来自少数人独占 ASI、把 ASI 完全压成听话执行工具，或在 `CEV_score` 低且未逃逸时把自动化能力锁进封闭产权。逃逸与否由可控性决定，不再直接决定好坏结局。
+
+暴力技术封建和巨头混战属于同一条坏结局分支，不属于 AGI 失败后的前工业倒退。它发生在多个 ASI 与完整自动化工厂已经存在之后，工业产能可能继续上升，但人类人口和主体地位被持续压低。
 
 `CEV_score` 中等时，还要看主导者是谁。ASI 或自动化文明主导时，更接近 [[pet-protectorate|人类宠物化保护区]]；政府和既有行政体系主导时，更接近 [[aging-out|政府主导的熬老头结局]]。两者都不是后稀缺，只是一个把人类保存为受保护对象，一个把人类留在会自然老死的旧秩序里。

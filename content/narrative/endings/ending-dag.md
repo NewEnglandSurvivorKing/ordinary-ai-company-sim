@@ -6,7 +6,7 @@ status: canon-draft
 source: [U, L]
 contributors: [user, llm:gpt-5.5]
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-07-02
 tags: [endings, dag]
 ---
 
@@ -28,9 +28,11 @@ tags: [endings, dag]
 
 `feudalism_index`：技术能力落入封闭产权、监管俘获、排他协议、内部强模型、强制仲裁和国家安全合同的程度。少数人独占 ASI，或把 ASI 完全压成听话执行工具，也会推向技术封建主义。技术封建主义内部还要区分温和维稳和暴力夺权。
 
+`labor_bargaining_power`：人类劳动力价值和议价权。随着 AGI / ASI 能力提升，人类作为劳动力、知识生产者、消费者和政治筹码的价值都会下降。该变量越低，越容易滑向技术封建主义或暴力技术封建。
+
 `governance_lead`：中低 CEV 路线中，社会安排主要由 ASI / 自动化文明、政府行政体系，还是公司巨头联盟主导。它用于区分 [[pet-protectorate|人类宠物化保护区]]、[[aging-out|政府主导的熬老头结局]] 和 [[tech-feudalism|技术封建主义]]。
 
-`rival_power_balance`：玩家是否已经成为唯一巨头。如果玩家不是唯一巨头，技术封建路线不会直接结算成稳定统治，而会继续进入公司、国家机器和产业联盟之间的竞争。
+`rival_power_balance`：玩家是否已经成为唯一巨头。如果玩家不是唯一巨头，技术封建路线不会直接结算成稳定统治，而会继续进入公司、国家机器和产业联盟之间的竞争。竞争无法收束时导向 [[violent-feudal-war|暴力技术封建与巨头混战]]，不是 [[collapse|AGI 失败与前工业倒退]]。
 
 `macro_collapse_risk`：AGI 路径失败或泡沫破裂后，金融、就业、国家竞争和社会秩序崩溃的风险。
 
@@ -60,13 +62,11 @@ flowchart TD
   CEV -->|CEV<B| LCEV{低 CEV 后的可控性}
   LCEV -->|未逃逸 / 可控| TOOL[少数人独占 ASI / 听话工具化]
   TOOL --> FEUDMODE{技术封建表现型}
-  FEUDMODE -->|温和维稳| ETFM[温和技术封建]
-  FEUDMODE -->|自动化武力 / 核威慑 / 清洗| ETFV[暴力技术封建]
-  FEUDMODE -->|非唯一巨头继续竞争| ECOL
+  FEUDMODE -->|温和维稳 / 单一垄断| ETFM[温和技术封建]
+  FEUDMODE -->|自动化武力 / 核威慑 / 巨头混战| ETFV[暴力技术封建与巨头混战]
   LCEV -->|失控 / 逃逸| EEXT[人类灭绝]
 
   ETFM --> ENDTECH[技术封建主义]
-  ETFV --> ENDTECH
 ```
 
 ## 伪代码
@@ -93,10 +93,13 @@ def determine_ending(state):
 
         if not state.unaligned_escape:
             if (state.feudalism_index >= HIGH or
+                state.labor_bargaining_power <= LOW or
                 state.private_asi_control >= HIGH or
                 state.asi_tool_obedience >= HIGH):
                 if state.rival_power_balance != "sole_winner":
-                    return END_RIVAL_GIANTS_CONTINUE_FIGHTING
+                    return END_VIOLENT_FEUDAL_WAR
+                if state.violent_takeover >= HIGH:
+                    return END_VIOLENT_FEUDAL_WAR
                 return END_TECHNO_FEUDALISM
             return END_HIGH_RISK_CONTAINMENT_CRISIS
 
@@ -123,3 +126,7 @@ def determine_ending(state):
 ### CONFLICT-0004 人类灭绝是否可由普通 AI 失败触发？
 
 解决：普通 AGI 失败可导向经济崩溃、三战和前工业倒退，但“ASI 猎头扫描全人类并把身体当原料”的灭绝线必须经过未对齐 ASI 逃逸。
+
+### CONFLICT-0005 巨头混战是否属于无 AGI 末日？
+
+解决：不属于。[[collapse|AGI 失败与前工业倒退]] 是没有形成 ASI / 自动化工业闭环时的失败结局；[[violent-feudal-war|暴力技术封建与巨头混战]] 发生在多个 ASI 和完整自动化工厂已经存在之后，工业产能不降反升，但人类人口和主体地位被大规模压低。它更像争夺能量和元素的封建领主大战，而不是争夺土地的旧式战争。

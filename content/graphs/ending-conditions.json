@@ -82,16 +82,10 @@
       "href": "narrative/endings/tech-feudalism"
     },
     {
-      "id": "violent-feudalism",
-      "label": "暴力技术封建",
+      "id": "violent-feudal-war",
+      "label": "暴力技术封建 / 巨头混战",
       "kind": "ending-bad",
-      "href": "narrative/endings/tech-feudalism"
-    },
-    {
-      "id": "armed-collapse",
-      "label": "武力夺权 / 巨头混战",
-      "kind": "ending-bad",
-      "href": "narrative/endings/collapse"
+      "href": "narrative/endings/violent-feudal-war"
     },
     {
       "id": "unsafe-escape",
@@ -201,17 +195,12 @@
     {
       "from": "feudalism-mode",
       "to": "feudalism",
-      "label": "温和维稳"
+      "label": "温和 / 单一垄断"
     },
     {
       "from": "feudalism-mode",
-      "to": "violent-feudalism",
-      "label": "自动化武力"
-    },
-    {
-      "from": "feudalism-mode",
-      "to": "armed-collapse",
-      "label": "巨头混战"
+      "to": "violent-feudal-war",
+      "label": "武力 / 多巨头"
     },
     {
       "from": "low-cev-control",

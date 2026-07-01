@@ -10,7 +10,7 @@ updated: 2026-07-01
 tags: [systems/macro-econ-politics, economy, power]
 depends_on: [REL-PRODUCT-001, MACRO-TEP-001]
 conflicts_with: []
-related_endings: [END-TECH-FEUDALISM, END-COLLAPSE, END-PUBLIC-TRANSITION, END-RESPECTED-TRANSITIONER]
+related_endings: [END-TECH-FEUDALISM, END-VIOLENT-FEUDAL-WAR, END-COLLAPSE, END-PUBLIC-TRANSITION, END-RESPECTED-TRANSITIONER]
 ---
 
 # 经济、产业链与权力集中
@@ -43,7 +43,7 @@ related_endings: [END-TECH-FEUDALISM, END-COLLAPSE, END-PUBLIC-TRANSITION, END-R
 
 排他性云服务、硬件供应、数据中心、电力和政府采购协议会提高护城河，也提高 `feudalism_index`。
 
-如果玩家不是唯一巨头，政商系统不会自动结算成胜利。其他公司、国家机器、军工体系和产业联盟也会争夺电力、算力、供应链、模型部署许可和合法性。玩家需要通过并购、排他协议、政府订单、监管塑形或产业联盟竞争继续胜出；失败时可能被吞并、被国家化，或把路线推向 [[collapse|社会范式崩坏]]。
+如果玩家不是唯一巨头，政商系统不会自动结算成胜利。其他公司、国家机器、军工体系和产业联盟也会争夺电力、算力、供应链、模型部署许可和合法性。玩家需要通过并购、排他协议、政府订单、监管塑形或产业联盟竞争继续胜出；无法收束时会把路线推向 [[violent-feudal-war|暴力技术封建与巨头混战]]。
 
 ## 金融操作
 
@@ -57,4 +57,4 @@ related_endings: [END-TECH-FEUDALISM, END-COLLAPSE, END-PUBLIC-TRANSITION, END-R
 
 资本越多 → 算力越多 → 模型越强 → 用户越多 → 数据越多 → 收入越高 → 政策影响力越强 → 供应链越集中 → 竞争者越难进入 → 公共治理越弱。
 
-当劳动不再是生产瓶颈，多数人的议价能力下降。社会稳定不再要求多数人拥有工作和未来，只要求他们没有能力组织有效反抗。
+当劳动不再是生产瓶颈，多数人的议价能力下降。随着 AGI / ASI 能力提升，人类作为劳动力、知识生产者、消费者和政治筹码的价值都会下降。社会稳定不再要求多数人拥有工作和未来，只要求他们没有能力组织有效反抗。
