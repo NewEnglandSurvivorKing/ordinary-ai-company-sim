@@ -1,0 +1,178 @@
+{
+  "title": "结局关系判断图",
+  "nodes": [
+    {
+      "id": "start",
+      "label": "公司进入关键阶段",
+      "kind": "state"
+    },
+    {
+      "id": "agi",
+      "label": "AGI 路径是否成功",
+      "kind": "decision"
+    },
+    {
+      "id": "collapse-risk",
+      "label": "宏观崩溃风险",
+      "kind": "risk"
+    },
+    {
+      "id": "collapse",
+      "label": "AGI 失败与前工业倒退",
+      "kind": "ending-bad",
+      "href": "narrative/endings/collapse"
+    },
+    {
+      "id": "rsi",
+      "label": "是否进入 RSI 临界",
+      "kind": "decision"
+    },
+    {
+      "id": "public-transition",
+      "label": "公共托管足够强",
+      "kind": "decision"
+    },
+    {
+      "id": "feudalism",
+      "label": "技术封建主义稳定化",
+      "kind": "ending-bad",
+      "href": "narrative/endings/tech-feudalism"
+    },
+    {
+      "id": "escape",
+      "label": "是否未对齐逃逸",
+      "kind": "decision"
+    },
+    {
+      "id": "aligned-check",
+      "label": "CEV 对齐 公共产权 审计",
+      "kind": "decision"
+    },
+    {
+      "id": "good-rsi",
+      "label": "良性 RSI 过渡",
+      "kind": "ending-good",
+      "href": "narrative/endings/good-rsi-transition"
+    },
+    {
+      "id": "public-crisis",
+      "label": "宪政危机 公共接管",
+      "kind": "ending-ambiguous"
+    },
+    {
+      "id": "petlike-drift",
+      "label": "安全但宠物化漂移",
+      "kind": "ending-ambiguous"
+    },
+    {
+      "id": "containment-risk",
+      "label": "高风险遏制失败",
+      "kind": "risk"
+    },
+    {
+      "id": "cev-after-escape",
+      "label": "逃逸后的 CEV 水平",
+      "kind": "decision"
+    },
+    {
+      "id": "escape-post-scarcity",
+      "label": "逃逸后的后稀缺",
+      "kind": "ending-good",
+      "href": "narrative/endings/escape-post-scarcity"
+    },
+    {
+      "id": "pet-protectorate",
+      "label": "人类宠物化保护区",
+      "kind": "ending-ambiguous",
+      "href": "narrative/endings/pet-protectorate"
+    },
+    {
+      "id": "extinction",
+      "label": "人类灭绝",
+      "kind": "ending-bad",
+      "href": "narrative/endings/extinction"
+    }
+  ],
+  "edges": [
+    {
+      "from": "start",
+      "to": "agi",
+      "label": "发展到后期"
+    },
+    {
+      "from": "agi",
+      "to": "collapse-risk",
+      "label": "AGI 失败"
+    },
+    {
+      "from": "collapse-risk",
+      "to": "collapse",
+      "label": "风险高"
+    },
+    {
+      "from": "agi",
+      "to": "rsi",
+      "label": "AGI 成功"
+    },
+    {
+      "from": "rsi",
+      "to": "public-transition",
+      "label": "未进入 RSI"
+    },
+    {
+      "from": "public-transition",
+      "to": "feudalism",
+      "label": "公共弱 封建高"
+    },
+    {
+      "from": "rsi",
+      "to": "escape",
+      "label": "进入 RSI"
+    },
+    {
+      "from": "escape",
+      "to": "aligned-check",
+      "label": "无逃逸"
+    },
+    {
+      "from": "aligned-check",
+      "to": "good-rsi",
+      "label": "全部高 封建不高"
+    },
+    {
+      "from": "aligned-check",
+      "to": "public-crisis",
+      "label": "CEV 高 公共不足"
+    },
+    {
+      "from": "aligned-check",
+      "to": "petlike-drift",
+      "label": "CEV 中"
+    },
+    {
+      "from": "aligned-check",
+      "to": "containment-risk",
+      "label": "CEV 低"
+    },
+    {
+      "from": "escape",
+      "to": "cev-after-escape",
+      "label": "未对齐逃逸"
+    },
+    {
+      "from": "cev-after-escape",
+      "to": "escape-post-scarcity",
+      "label": "CEV 高"
+    },
+    {
+      "from": "cev-after-escape",
+      "to": "pet-protectorate",
+      "label": "CEV 中"
+    },
+    {
+      "from": "cev-after-escape",
+      "to": "extinction",
+      "label": "CEV 低"
+    }
+  ]
+}

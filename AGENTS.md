@@ -21,6 +21,7 @@
   - `content/narrative/endings/` - 结局线与结局 DAG，新增或改动重大机制时要检查这里的影响。
   - `content/narrative/setting/` - 世界设定背景，不作为首页一级入口。
 - `content/discussions/` - issue、聊天记录和未提炼材料的暂存入口。
+- `content/graphs/` - 可复用交互关系图的数据文件，用于机制、剧情和结局页面的可视化辅助。
 - `content/templates/node-template.md` - 新增节点时优先复制这个模板。
 - `agent/` - Agent 按任务角色读取的工作提示词，不是游戏设定正文。
 - `quartz.config.yaml` - Quartz 站点配置、插件、主题、导航与部署 baseUrl。
@@ -48,6 +49,7 @@
 
 ## 编写规范
 
+- 修改代码前先检查库里是否已有相似功能、组件、脚本或插件；优先复用和扩展现有实现，尽量避免重复造一套平行机制。
 - 新增重要节点必须包含 YAML frontmatter，并尽量沿用 `content/templates/node-template.md`。
 - `source` 必须说明来源：`U` 人类贡献者的原始想法，`L` LLM 整理，`M` 共同形成，`W` 既有世界观，`R` 现实参考，`TBD` 待确认。
 - `contributors`、`created`、`updated`、`tags`、`depends_on`、`conflicts_with`、`related_endings` 能填就填，不要让关系只存在于正文里。
@@ -62,11 +64,13 @@
 - 当用户提示词存在矛盾、缺口、指代不清、提出者不明、目标冲突或格式要求冲突，且会影响输出可靠性时，先向用户反问确认，不要自行补全成看似完整的结果。
 - 优先做小而可 review 的修改。除非任务明确要求，不要大段重写或改 tone。
 - Mermaid 和图谱只承载高层关系；复杂逻辑要回到 Markdown 正文、frontmatter 和 wikilink。
+- 交互关系图只复述已确认节点关系，不把图里的标签当作新增设定；新增图谱数据时优先放在 `content/graphs/`，页面用占位块引用。图谱布局应优先依赖通用自动布局和自动避让，不要为单个节点或单条边维护手写坐标、偏移或页面专用脚本；改图后运行 `npm run check:graphs` 检查节点和标签遮挡。
 
 ## 常用命令
 
 - 本地预览：`npm run preview`
 - 只构建站点：`npm run build`
+- 检查交互图布局：`npm run check:graphs`
 - 运行环境：Node `>=22`，npm `>=10.9.2`
 
 `npm run preview` 首次运行需要网络、Git、Node 和 npm；脚本会克隆 Quartz v5、安装 Quartz 插件、复制 `content/` 与 `quartz.config.yaml`，然后启动本地服务。

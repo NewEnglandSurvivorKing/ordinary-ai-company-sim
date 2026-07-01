@@ -12,6 +12,10 @@ tags: [endings]
 
 > 结局是剧情层里最结构化的判定系统，负责结算玩家一路积累的产权安排、价值与对齐状态、公共托管、逃逸风险和宏观后果。
 
+## 快速判断图
+
+<div class="semantic-graph" data-src="graphs/ending-conditions.json"></div>
+
 ## 主要页面
 
 - [[ending-dag|结局 DAG / Markov 图]]

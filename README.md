@@ -33,12 +33,13 @@ ordinary-ai-company-sim/
    │  ├─ endings/
    │  └─ setting/
    ├─ discussions/
+   ├─ graphs/
    └─ templates/
 ```
 
 正文都在 `content/`。`README.md` 只做协作入口、稳定目录和部署说明，不记录阶段性改动；已处理 issue 见 `content/99-issue-resolution-map.md`。
 
-`systems/` 收玩家操作、资源、变量和系统反馈。`narrative/` 收剧情呈现、ASI 叙事、结局系统和世界设定背景。`discussions/` 收 issue、聊天记录和还没有提炼成正式节点的材料。
+`systems/` 收玩家操作、资源、变量和系统反馈。`narrative/` 收剧情呈现、ASI 叙事、结局系统和世界设定背景。`discussions/` 收 issue、聊天记录和还没有提炼成正式节点的材料。`graphs/` 收可复用交互关系图的数据文件。
 
 ## 本地预览
 
