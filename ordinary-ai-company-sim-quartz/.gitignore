@@ -1,0 +1,7 @@
+node_modules/
+public/
+.quartz-preview/
+.quartz-build/
+.DS_Store
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json

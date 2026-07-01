@@ -1,0 +1,15 @@
+{
+  "name": "ordinary-ai-company-sim",
+  "version": "0.2.0-quartz-content",
+  "private": true,
+  "type": "module",
+  "description": "一个很普通的 AI 公司模拟经营游戏：Quartz 化设计知识库",
+  "scripts": {
+    "preview": "node scripts/preview-quartz.mjs --serve",
+    "build": "node scripts/preview-quartz.mjs --build"
+  },
+  "engines": {
+    "node": ">=22",
+    "npm": ">=10.9.2"
+  }
+}
