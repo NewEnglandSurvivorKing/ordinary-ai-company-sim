@@ -5,6 +5,7 @@
   "type": "module",
   "description": "一个很普通的 AI 公司模拟经营游戏：Quartz 化设计知识库",
   "scripts": {
+    "validate": "node scripts/validate.mjs",
     "check:graphs": "node scripts/check-graphs.mjs",
     "preview": "node scripts/preview-quartz.mjs --serve",
     "build": "node scripts/preview-quartz.mjs --build"

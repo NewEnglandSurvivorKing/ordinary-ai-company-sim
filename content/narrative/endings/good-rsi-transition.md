@@ -8,7 +8,7 @@ contributors: [user, llm:gpt-5.5]
 created: 2026-07-01
 updated: 2026-07-01
 tags: [endings/good, rsi, post-scarcity]
-depends_on: [WORLD-POSTSCARCITY-001, END-DAG-001]
+depends_on: [WORLD-POSTSCARCITY-001, END-INDEX-001]
 conflicts_with: []
 ---
 

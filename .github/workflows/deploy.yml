@@ -27,6 +27,12 @@ jobs:
         with:
           node-version: 24
 
+      - name: Validate Markdown content
+        run: npm run validate
+
+      - name: Check graph layout data
+        run: npm run check:graphs
+
       - name: Clone Quartz v5
         run: git clone --depth 1 --branch v5 https://github.com/jackyzha0/quartz.git .quartz-build
 

@@ -18,7 +18,7 @@
   - `content/systems/macro-econ-politics/` - 经济政治建模、产业链、监管和社会反馈。
   - `content/systems/company-operations/` - 公司经营、发布、产品化和商业动作。
 - `content/narrative/` - 剧情、事件呈现、结局系统和世界设定背景。
-  - `content/narrative/endings/` - 结局线与结局 DAG，新增或改动重大机制时要检查这里的影响。
+  - `content/narrative/endings/` - 结局线与结局系统，新增或改动重大机制时要检查这里的影响。
   - `content/narrative/setting/` - 世界设定背景，不作为首页一级入口。
 - `content/discussions/` - issue、聊天记录和未提炼材料的暂存入口。
 - `content/graphs/` - 可复用交互关系图的数据文件，用于机制、剧情和结局页面的可视化辅助。
@@ -55,7 +55,7 @@
 - `contributors`、`created`、`updated`、`tags`、`depends_on`、`conflicts_with`、`related_endings` 能填就填，不要让关系只存在于正文里。
 - 新增或改写机制时，说明它影响哪些变量、玩家选择、系统反馈和结局。
 - 未提炼的聊天、issue 和零散想法先进入 `content/discussions/`；没有人类明确确认时，不要把它们补写成正式机制。
-- 使用 Obsidian wikilink，例如 `[[ending-dag|结局 DAG]]`，不要随意换成裸 URL。
+- 使用 Obsidian wikilink，例如 `[[narrative/endings/index|结局系统]]`，不要随意换成裸 URL。
 - 保持作者语气：冷静、锋利、结构化，可以有文学性，但不要营销化、鸡汤化或玩梗化。
 - 所有文案修改都要保持高信息密度；不要用空洞过渡、套话、同义句堆叠或过度结构化来填充篇幅。
 - 不要为了去掉抽象词而改成大量名词并列；如果一两个准确的上位词能保留信息密度，就保留或改用上位词。
@@ -70,6 +70,7 @@
 
 - 本地预览：`npm run preview`
 - 只构建站点：`npm run build`
+- 检查 Markdown 结构、frontmatter、wikilink 和关系 ID：`npm run validate`
 - 检查交互图布局：`npm run check:graphs`
 - 运行环境：Node `>=22`，npm `>=10.9.2`
 
@@ -93,6 +94,6 @@
 - Markdown 是唯一可信源；Quartz 页面、Obsidian 图谱和生成的 HTML 都不能反向覆盖 `content/`。
 - `quartz.config.yaml` 的 `ignorePatterns` 会忽略 `templates`，模板页不是公开内容入口。
 - Quartz 日期插件优先读 frontmatter 和 git；新文件未被 git 跟踪时，本地预览可能提示日期不准确。
-- 改机制节点时要同步检查 `content/narrative/endings/ending-dag.md` 和相关结局页，避免机制通向不存在或矛盾的结局。
+- 改机制节点时要同步检查 `content/narrative/endings/index.md` 和相关结局页，避免机制通向不存在或矛盾的结局。
 - 改首页入口、目录页或文件名时，要检查 wikilink、Quartz 导航、搜索和 GitHub Pages 构建。
 - 这个文件只放协作约定和高频注意事项；详细架构、业务设定长文和具体剧情规格应放到 `content/` 的相应节点里。

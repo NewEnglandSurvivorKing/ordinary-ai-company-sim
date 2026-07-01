@@ -82,7 +82,7 @@ related_endings: []
 
 ## 影响结局
 
-本节点暂不新增结局。后续如果建立“前期淘汰结局”“未成 frontier 结局”或类似分支，应回填 `related_endings` 并检查 [[ending-dag|结局 DAG]]。
+本节点暂不新增结局。后续如果建立“前期淘汰结局”“未成 frontier 结局”或类似分支，应回填 `related_endings` 并检查 [[narrative/endings/index|结局系统]]。
 
 ## 冲突点
 

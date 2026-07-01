@@ -8,7 +8,7 @@ contributors: [user, Asdika, 某种有机智能, 如更云如更, llm:gpt-5.5, l
 created: 2026-07-01
 updated: 2026-07-01
 tags: [narrative, asi, escape, system/risk]
-depends_on: [RND-SYSTEM-001, EVAL-BENCH-001, REL-PRODUCT-001, END-DAG-001]
+depends_on: [RND-SYSTEM-001, EVAL-BENCH-001, REL-PRODUCT-001, END-INDEX-001]
 conflicts_with: []
 related_endings: [END-ESCAPE-POSTSCARCITY, END-HUMAN-PET-WELFARE, END-HUMAN-EXTINCTION]
 ---

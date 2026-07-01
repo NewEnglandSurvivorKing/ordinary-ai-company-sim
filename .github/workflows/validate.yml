@@ -1,0 +1,32 @@
+name: Validate content
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Validate Markdown content
+        run: npm run validate
+
+      - name: Check graph layout data
+        run: npm run check:graphs
+
+      - name: Build Quartz site
+        run: npm run build

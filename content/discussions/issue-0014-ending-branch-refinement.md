@@ -8,7 +8,7 @@ contributors: [user, EDLSDPSY, "如更云如更", "llm:codex"]
 created: 2026-07-01
 updated: 2026-07-02
 tags: [discussions, endings, systems/macro-econ-politics, systems/ai-training-sim]
-depends_on: [END-DAG-001, END-TECH-FEUDALISM, END-HUMAN-PET-WELFARE, MACRO-TEP-001, INFRA-SCALE-001]
+depends_on: [END-INDEX-001, END-TECH-FEUDALISM, END-HUMAN-PET-WELFARE, MACRO-TEP-001, INFRA-SCALE-001]
 conflicts_with: []
 related_endings: [END-TECH-FEUDALISM, END-VIOLENT-FEUDAL-WAR, END-HUMAN-PET-WELFARE, END-AGING-OUT, END-COLLAPSE]
 ---

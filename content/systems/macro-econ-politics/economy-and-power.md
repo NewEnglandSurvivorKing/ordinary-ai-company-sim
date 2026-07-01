@@ -10,7 +10,7 @@ updated: 2026-07-01
 tags: [systems/macro-econ-politics, economy, power]
 depends_on: [REL-PRODUCT-001, MACRO-TEP-001]
 conflicts_with: []
-related_endings: [END-TECH-FEUDALISM, END-VIOLENT-FEUDAL-WAR, END-COLLAPSE, END-PUBLIC-TRANSITION, END-RESPECTED-TRANSITIONER]
+related_endings: [END-TECH-FEUDALISM, END-VIOLENT-FEUDAL-WAR, END-COLLAPSE, END-RESPECTED-TRANSITIONER]
 ---
 
 # 经济、产业链与权力集中

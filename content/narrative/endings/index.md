@@ -19,7 +19,6 @@ tags: [endings]
 
 ## 主要页面
 
-- [[ending-dag|结局 DAG / Markov 图]]
 - [[good-rsi-transition|良性 RSI 过渡线]]
 - [[escape-post-scarcity|逃逸后的后稀缺特殊剧情]]
 - [[tech-feudalism|技术封建主义线]]

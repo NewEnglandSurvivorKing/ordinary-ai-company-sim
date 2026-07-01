@@ -28,7 +28,7 @@ tags: [meta, issues]
 
 ## #4 建立群体创作用想法 / 架构树协作规范
 
-处理结果：重写 [[01-collaboration-guide|协作规范]]，并新增 [[node-template|节点模板]]。所有节点必须有来源、贡献者、状态、依赖、冲突、影响结局等字段。
+处理结果：重写 [[01-collaboration-guide|协作规范]]，并新增 `content/templates/node-template.md`。所有节点必须有来源、贡献者、状态、依赖、冲突、影响结局等字段。
 
 ## #5 将仓库 Quartz 化
 
@@ -37,3 +37,11 @@ tags: [meta, issues]
 ## 2026-07-02 前期教程、百模大战生存与信息提示整理
 
 处理结果：新增 [[early-game-survival|前期经营资源与百模大战生存]]，把新手教程 demo 需要的基础资源、行动循环、系统反馈和难度接口归入公司经营机制；[[progression|剧情推进]] 补充 2020-2022 教学关卡范围；新增 [[info-wiki-tech-tree-hints|游戏内 wiki、信息解锁与科技树提示]]，暂存 wiki、悬停提示、信息源可信度和科技树可读性讨论。
+
+## 2026-07-02 内容自动校验
+
+处理结果：新增 `scripts/validate.mjs` 和 `npm run validate`，检查 Markdown frontmatter、节点 ID、关系字段、wikilink 和 Quartz 忽略目录链接；新增 `.github/workflows/validate.yml`，在 PR 和 main push 上运行内容校验、图谱校验和 Quartz 构建；部署流程也会在构建 Pages 前运行内容校验和图谱校验。
+
+## 2026-07-02 删除旧结局 DAG / Markov 图
+
+处理结果：删除旧的 `content/narrative/endings/ending-dag.md`。相关依赖和正文链接改为指向 [[narrative/endings/index|结局系统]] 或具体结局页，避免保留过时的结局判定入口。

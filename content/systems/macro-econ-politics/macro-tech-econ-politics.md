@@ -10,7 +10,7 @@ updated: 2026-07-01
 tags: [systems/macro-econ-politics, economy, politics]
 depends_on: [RND-SYSTEM-001, ECON-POWER-001]
 conflicts_with: []
-related_endings: [END-TECH-FEUDALISM, END-VIOLENT-FEUDAL-WAR, END-COLLAPSE, END-AGING-OUT, END-PUBLIC-TRANSITION]
+related_endings: [END-TECH-FEUDALISM, END-VIOLENT-FEUDAL-WAR, END-COLLAPSE, END-AGING-OUT, END-RESPECTED-TRANSITIONER]
 ---
 
 # 跨奇点技术—经济—政治粗粒度模型

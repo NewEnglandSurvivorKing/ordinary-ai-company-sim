@@ -45,6 +45,20 @@ ordinary-ai-company-sim/
 
 本仓库不直接 vendoring Quartz 源码。预览脚本会在本地克隆 Quartz v5 到 `.quartz-preview/`，复制 `content/` 和 `quartz.config.yaml` 后构建。
 
+检查 Markdown frontmatter、wikilink、关系 ID 和 Quartz 忽略目录链接：
+
+```bash
+npm run validate
+```
+
+检查交互图布局数据：
+
+```bash
+npm run check:graphs
+```
+
+启动本地预览：
+
 ```bash
 npm run preview
 ```
