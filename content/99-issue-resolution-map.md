@@ -3,7 +3,7 @@ id: META-ISSUE-MAP-001
 title: Issue 合并说明
 type: meta
 status: canon-draft
-source: [U, L, F]
+source: [U, L]
 contributors: [NewEnglandSurvivorKing, user, llm:gpt-5.5]
 created: 2026-07-01
 updated: 2026-07-01

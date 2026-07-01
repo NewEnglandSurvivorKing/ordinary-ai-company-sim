@@ -3,7 +3,7 @@ id: MACRO-TEP-001
 title: 跨奇点技术—经济—政治粗粒度模型
 type: design-node
 status: canon-draft
-source: [F, L]
+source: [U, L]
 contributors: [灵乌路空, Flantern, 某种有机智能, 安蒂侨钚嗣, llm:gpt-5.5]
 created: 2026-07-01
 updated: 2026-07-01

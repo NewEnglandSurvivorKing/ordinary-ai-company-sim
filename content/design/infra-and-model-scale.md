@@ -3,7 +3,7 @@ id: INFRA-SCALE-001
 title: 模型规模与训练/推理基础设施
 type: design-node
 status: canon-draft
-source: [U, L, F]
+source: [U, L]
 contributors: [Sunbread, Sonnet5, wangww, llm:gpt-5.5]
 created: 2026-07-01
 updated: 2026-07-01
