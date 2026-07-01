@@ -6,7 +6,7 @@ status: canon-draft
 source: [U, L]
 contributors: [user, llm:gpt-5.5]
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-07-02
 tags: [core, overview]
 ---
 
@@ -19,6 +19,8 @@ tags: [core, overview]
 玩家从一家 LLM 公司开始，拥有启动资源、模型、训练数据和初始用户。前期通过训练、发布、商业化和资源采购获得增长。中期进入算力基础设施、数据、法律监管、政府合同和产业链垂直整合。后期面对 AGI / RSI / ASI、自动化失业、技术封建主义、公共治理、后稀缺或文明崩溃。
 
 游戏的强策略不应被写成纯奖励。数据滥用、降智、法律压制、监管俘获、排他协议、秘密内部强模型、国防合同和供应链垄断都可以带来收益，但也会提高 `feudalism_index`、`trust_debt`、`escape_risk`、`public_capture_failure`、`social_externality` 等变量。
+
+前期的第一道门槛是 [[early-game-survival|前期经营资源与百模大战生存]]：玩家必须先在现金、算力、数据、研发方向、评估和发布窗口之间活下来，才有资格进入后期社会结构选择。
 
 ## 三个体验阶段
 

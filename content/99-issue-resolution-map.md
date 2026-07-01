@@ -6,7 +6,7 @@ status: canon-draft
 source: [U, L]
 contributors: [NewEnglandSurvivorKing, user, llm:gpt-5.5]
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-07-02
 tags: [meta, issues]
 ---
 
@@ -33,3 +33,7 @@ tags: [meta, issues]
 ## #5 将仓库 Quartz 化
 
 处理结果：新增 Quartz 内容结构、`quartz.config.yaml`、本地预览脚本、GitHub Pages workflow。仓库避免 vendoring Quartz 源码，在本地预览和 CI 部署时克隆 Quartz v5 并复制 `content/`。
+
+## 2026-07-02 前期教程、百模大战生存与信息提示整理
+
+处理结果：新增 [[early-game-survival|前期经营资源与百模大战生存]]，把新手教程 demo 需要的基础资源、行动循环、系统反馈和难度接口归入公司经营机制；[[progression|剧情推进]] 补充 2020-2022 教学关卡范围；新增 [[info-wiki-tech-tree-hints|游戏内 wiki、信息解锁与科技树提示]]，暂存 wiki、悬停提示、信息源可信度和科技树可读性讨论。

@@ -6,7 +6,7 @@ status: draft
 source: [U, L]
 contributors: [Asdika, "某种有机智能", EDLSDPSY, "Sunbread OverClock", "如更云如更", "海星剑辰", "llm:codex"]
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-07-02
 tags: [discussions, systems/ai-training-sim, difficulty, tech-tree]
 depends_on: [RND-SYSTEM-001, INFRA-SCALE-001, NARR-ANTI-001]
 conflicts_with: []
@@ -34,6 +34,11 @@ related_endings: []
 - [[rnd-system|AI 研发系统]] 已有“每局架构—能力映射矩阵”和技术树段落，可以承接每局随机、试错、读预印本和论文 idea 池。
 - [[infra-and-model-scale|模型规模与训练/推理基础设施]] 已经限制参数规模档位，可以承接目标参数规模经验约束和 20T dense 风险。
 - [[anti-inducement|叙事与反诱导机制]] 已有多周目防背板设定，可以承接“玩家不能简单背板，但会保留部分认知”的方向。
+
+## 已拆分入口
+
+- [[early-game-survival|前期经营资源与百模大战生存]] 承接前期百模大战、生存难度和基础资源循环。
+- [[info-wiki-tech-tree-hints|游戏内 wiki、信息解锁与科技树提示]] 承接 wiki、悬停提示、信息源可信度和科技树可读性讨论。
 
 ## 待确认问题
 
