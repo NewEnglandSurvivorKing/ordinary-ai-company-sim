@@ -15,13 +15,13 @@ related_endings: [END-COLLAPSE, END-ASI-ESCAPE, END-RESPECTED-TRANSITIONER]
 
 # 模型规模与训练/推理基础设施
 
-> 参数量不是自由滑条。玩家能训练多大模型，首先受基础设施技术约束。
+> 参数量会被显存、互联、并行方式和推理成本卡住，无法作为自由滑条。
 
 ## 核心修正
 
-主线中不应允许玩家随便输入“20T dense”这类模型规模。大模型训练不是“钱够就堆参数”，而是受显存、通信拓扑、并行方式、稳定训练技术、数据质量、optimizer、checkpoint 回滚、推理成本和工程 know-how 共同约束。
+主线中不应允许玩家随便输入“20T dense”这类模型规模。大模型训练受显存、通信拓扑、并行方式、稳定训练技术、数据质量、optimizer、checkpoint 回滚、推理成本和工程 know-how 共同约束，钱够也不能直接堆参数。
 
-因此游戏中参数规模采用“可解锁档位 + infra 技术约束”，而不是连续自由控制。
+因此游戏中参数规模采用“可解锁档位 + infra 技术约束”，不提供连续自由控制。
 
 ## 并行方式
 
@@ -43,7 +43,7 @@ related_endings: [END-COLLAPSE, END-ASI-ESCAPE, END-RESPECTED-TRANSITIONER]
 
 ### CP / SP：Context / Sequence Parallel
 
-用于超长上下文，把注意力计算按上下文、序列或注意力头拆开。涉及 Ulysses、Ring Attention 以及混合路线。它决定长上下文模型能否训练和推理，而不是简单把 max context 往上拉。
+用于超长上下文，把注意力计算按上下文、序列或注意力头拆开。涉及 Ulysses、Ring Attention 以及混合路线。它决定长上下文模型能否训练和推理，无法通过简单拉高 max context 解决。
 
 ## 参数规模档位
 
@@ -55,7 +55,7 @@ related_endings: [END-COLLAPSE, END-ASI-ESCAPE, END-RESPECTED-TRANSITIONER]
 - 超大 MoE：1T+ total params。需要 MoE、EP、负载均衡、路由稳定性和推理优化。
 - 戴着镣铐的巨模型：10T+ effective / sparse only。只能在非常成熟的 infra 与产业链垂直整合后出现，且推理成本和服务策略成为核心问题。
 
-无 EP / MoE 训练的最大模型大致应卡在 400B 量级。20T dense 应作为错误路线、投资人吹牛或玩家误判，而不是正常可行选项。
+无 EP / MoE 训练的最大模型大致应卡在 400B 量级。20T dense 应作为错误路线、投资人吹牛或玩家误判处理，不进入正常可行选项。
 
 ## 训练 infra 与推理 infra 分离
 
@@ -73,4 +73,4 @@ related_endings: [END-COLLAPSE, END-ASI-ESCAPE, END-RESPECTED-TRANSITIONER]
 
 ## 玩法效果
 
-该系统让玩家不能机械 scale。想变大必须先解决互联、稳定训练、数据管线、并行策略、推理成本和电力供给。失败不是“少赚一点”，而可能是集群训爆、现金流断裂、发布窗口错过、竞品抢占范式或内部高能力 checkpoint 被迫黑箱部署。
+这条规则阻止玩家机械 scale。想变大必须先解决基础设施和工程瓶颈。失败会表现为集群训爆、现金流断裂、发布窗口错过、竞品抢占范式或内部高能力 checkpoint 被迫黑箱部署。

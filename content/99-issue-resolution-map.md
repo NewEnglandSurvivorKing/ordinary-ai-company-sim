@@ -24,7 +24,7 @@ tags: [meta, issues]
 
 ## #3 建立跨奇点技术—经济—政治粗粒度模拟模型
 
-处理结果：新增 [[macro-tech-econ-politics|跨奇点技术—经济—政治粗粒度模型]]。它不追求精确预测，而是用阶段标志物、主体预期、信心变量、金融重定价、裁员—回滚、政策反应和市场叙事支持宏观涌现。
+处理结果：新增 [[macro-tech-econ-politics|跨奇点技术—经济—政治粗粒度模型]]。它放弃精确预测，用阶段标志物、主体预期、信心变量、金融重定价、裁员—回滚、政策反应和市场叙事写出宏观变化。
 
 ## #4 建立群体创作用想法 / 架构树协作规范
 
@@ -32,4 +32,4 @@ tags: [meta, issues]
 
 ## #5 将仓库 Quartz 化
 
-处理结果：新增 Quartz 内容结构、`quartz.config.yaml`、本地预览脚本、GitHub Pages workflow。仓库不 vendoring Quartz 源码，而是在本地预览和 CI 部署时克隆 Quartz v5 并复制 `content/`。
+处理结果：新增 Quartz 内容结构、`quartz.config.yaml`、本地预览脚本、GitHub Pages workflow。仓库避免 vendoring Quartz 源码，在本地预览和 CI 部署时克隆 Quartz v5 并复制 `content/`。

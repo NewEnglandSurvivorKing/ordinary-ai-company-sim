@@ -15,7 +15,7 @@ related_endings: [END-TECH-FEUDALISM, END-ASI-ESCAPE]
 
 # 评估、benchmark 与社区 harness
 
-> benchmark 是能力投影，不是能力本身。玩家既可以被它误导，也可以主动污染它。
+> benchmark 是能力投影，无法等同于能力本身。玩家既可以被它误导，也可以主动污染它。
 
 ## 双层能力指标
 
@@ -23,7 +23,7 @@ related_endings: [END-TECH-FEUDALISM, END-ASI-ESCAPE]
 
 ## benchmark 噪音
 
-用户情绪噪音：公司近期负面新闻、封号、数据泄露、裁员、涨价、降智传闻会让主观评分系统性偏低。
+用户情绪噪音：公司近期负面新闻、封号、数据泄露、裁员、涨价、降智传闻会让用户集体打低分。
 
 测试集污染：竞争对手可能对公开测试集过拟合。玩家也可以通过获取测试机构题目进行 benchmaxxing，但 testset 质量会随时间下降，因为测试机构会换新题。
 
