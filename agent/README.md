@@ -14,10 +14,15 @@
 
 - `chat-record-organizer.md` - 整理聊天、issue、零散想法。
 - `content-editor.md` - 修改或扩写游戏设定。
+- `de-ai-writing-editor.md` - 去除 AI 味、压缩文案、保持原意改写。
 - `consistency-maintainer.md` - 维护结构、来源、链接和结局一致性。
 - `site-maintainer.md` - 处理 Quartz、构建、部署和预览。
 - `agent-rule-maintainer.md` - 维护 `agent/` 和 Agent 规则。
 - `reviewer.md` - 做审阅而非直接修改。
+
+## 参考文件
+
+- `de-ai-writing-examples.md` - 去 AI 味和信息压缩的例子记录，不是独立角色。
 
 ## 原则
 

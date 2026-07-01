@@ -29,6 +29,7 @@
 
 - 整理聊天、issue、零散想法：读 `agent/chat-record-organizer.md`。
 - 修改或扩写游戏设定：读 `agent/content-editor.md`。
+- 去除 AI 味、压缩文案、保持原意改写：读 `agent/de-ai-writing-editor.md`。
 - 维护结构、来源、链接、结局一致性：读 `agent/consistency-maintainer.md`。
 - 处理 Quartz、构建、部署、预览：读 `agent/site-maintainer.md`。
 - 维护 `agent/` 和 Agent 规则：读 `agent/agent-rule-maintainer.md`。
@@ -46,6 +47,9 @@
 - 新增或改写机制时，说明它影响哪些变量、玩家选择、系统反馈和结局。
 - 使用 Obsidian wikilink，例如 `[[ending-dag|结局 DAG]]`，不要随意换成裸 URL。
 - 保持作者语气：冷静、锋利、结构化，可以有文学性，但不要营销化、鸡汤化或玩梗化。
+- 所有文案修改都要保持高信息密度；不要用空洞过渡、套话、同义句堆叠或过度结构化来填充篇幅。
+- 不得加入用户提示词之外的 LLM 推测、背景补充、合理化解释、方案设计、技术细节、价值判断或自动补全内容。即使某个方向看起来自然，也必须等用户提示词明确提出。
+- 当用户提示词存在矛盾、缺口、指代不清、提出者不明、目标冲突或格式要求冲突，且会影响输出可靠性时，先向用户反问确认，不要自行补全成看似完整的结果。
 - 优先做小而可 review 的修改。除非任务明确要求，不要大段重写或改 tone。
 - Mermaid 和图谱只承载高层关系；复杂逻辑要回到 Markdown 正文、frontmatter 和 wikilink。
 
