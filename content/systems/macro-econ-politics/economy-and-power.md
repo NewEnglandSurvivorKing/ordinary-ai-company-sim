@@ -10,7 +10,7 @@ updated: 2026-07-01
 tags: [systems/macro-econ-politics, economy, power]
 depends_on: [REL-PRODUCT-001, MACRO-TEP-001]
 conflicts_with: []
-related_endings: [END-TECH-FEUDALISM, END-PUBLIC-TRANSITION, END-RESPECTED-TRANSITIONER]
+related_endings: [END-TECH-FEUDALISM, END-COLLAPSE, END-PUBLIC-TRANSITION, END-RESPECTED-TRANSITIONER]
 ---
 
 # 经济、产业链与权力集中
@@ -42,6 +42,8 @@ related_endings: [END-TECH-FEUDALISM, END-PUBLIC-TRANSITION, END-RESPECTED-TRANS
 政府合同利润高、现金流稳定、战略地位强，但会把公司吸入国家安全体系。内部完整能力版可能优先服务军政、关键基础设施和大型企业，公共模型被排在后面。
 
 排他性云服务、硬件供应、数据中心、电力和政府采购协议会提高护城河，也提高 `feudalism_index`。
+
+如果玩家不是唯一巨头，政商系统不会自动结算成胜利。其他公司、国家机器、军工体系和产业联盟也会争夺电力、算力、供应链、模型部署许可和合法性。玩家需要通过并购、排他协议、政府订单、监管塑形或产业联盟竞争继续胜出；失败时可能被吞并、被国家化，或把路线推向 [[collapse|社会范式崩坏]]。
 
 ## 金融操作
 

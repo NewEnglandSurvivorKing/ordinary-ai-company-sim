@@ -10,6 +10,7 @@ updated: 2026-07-01
 tags: [endings/ambiguous, asi]
 depends_on: [ASI-ESCAPE-MECHANIC]
 conflicts_with: []
+related_endings: [END-AGING-OUT, END-RESPECTED-TRANSITIONER]
 ---
 
 # 人类宠物化保护区
@@ -33,3 +34,5 @@ conflicts_with: []
 ASI 自行探索宇宙、使用绝大部分高端产能、管理自动化工业。人类被保留为受保护生物、文化遗存、研究对象或低速人类社群。
 
 这是比灭绝好得多、但远低于后稀缺多主体宪政的结局。它以舒适福利完成温柔废黜。
+
+它不同于 [[aging-out|政府主导的熬老头结局]]。宠物化保护区的主导者是 ASI 或自动化文明；熬老头结局的主导者是政府和旧行政体系。

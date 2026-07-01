@@ -13,3 +13,5 @@ tags: [discussions]
 > 收纳 issue、聊天记录和还没有提炼成正式机制或剧情节点的材料。
 
 - [[99-issue-resolution-map|Issue 合并说明]]
+- [[difficulty-player-assist-rnd-tech-tree|难度分层、玩家辅助与研发科技树随机性]]
+- [[issue-0014-ending-branch-refinement|结局分支细化、技术封建表现型与国别基础变量]]

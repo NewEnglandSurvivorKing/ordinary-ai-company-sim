@@ -26,7 +26,11 @@ tags: [endings, dag]
 
 `public_ownership`：全民控股、公共受托、自动化红利产权化、公共算力、公共模型访问、数据中心公共义务。
 
-`feudalism_index`：技术能力落入封闭产权、监管俘获、排他协议、内部强模型、强制仲裁和国家安全合同的程度。少数人独占 ASI，或把 ASI 完全压成听话执行工具，也会推向技术封建主义。
+`feudalism_index`：技术能力落入封闭产权、监管俘获、排他协议、内部强模型、强制仲裁和国家安全合同的程度。少数人独占 ASI，或把 ASI 完全压成听话执行工具，也会推向技术封建主义。技术封建主义内部还要区分温和维稳和暴力夺权。
+
+`governance_lead`：中低 CEV 路线中，社会安排主要由 ASI / 自动化文明、政府行政体系，还是公司巨头联盟主导。它用于区分 [[pet-protectorate|人类宠物化保护区]]、[[aging-out|政府主导的熬老头结局]] 和 [[tech-feudalism|技术封建主义]]。
+
+`rival_power_balance`：玩家是否已经成为唯一巨头。如果玩家不是唯一巨头，技术封建路线不会直接结算成稳定统治，而会继续进入公司、国家机器和产业联盟之间的竞争。
 
 `macro_collapse_risk`：AGI 路径失败或泡沫破裂后，金融、就业、国家竞争和社会秩序崩溃的风险。
 
@@ -50,13 +54,19 @@ flowchart TD
   ERSI --> EFALC[后稀缺]
   EESC --> EFALC
 
-  CEV -->|B<=CEV<A| EPET[人类宠物化保护区]
+  CEV -->|B<=CEV<A| GOV{中 CEV 后的主导者}
+  GOV -->|ASI / 自动化文明主导| EPET[人类宠物化保护区]
+  GOV -->|政府行政体系主导| EAGE[政府主导的熬老头结局]
   CEV -->|CEV<B| LCEV{低 CEV 后的可控性}
   LCEV -->|未逃逸 / 可控| TOOL[少数人独占 ASI / 听话工具化]
-  TOOL --> ETF
+  TOOL --> FEUDMODE{技术封建表现型}
+  FEUDMODE -->|温和维稳| ETFM[温和技术封建]
+  FEUDMODE -->|自动化武力 / 核威慑 / 清洗| ETFV[暴力技术封建]
+  FEUDMODE -->|非唯一巨头继续竞争| ECOL
   LCEV -->|失控 / 逃逸| EEXT[人类灭绝]
 
-  ETF --> ENDTECH[技术封建主义]
+  ETFM --> ENDTECH[技术封建主义]
+  ETFV --> ENDTECH
 ```
 
 ## 伪代码
@@ -77,12 +87,16 @@ def determine_ending(state):
             return END_RESPECTED_TRANSITIONER
 
         if state.CEV_score >= B:
+            if state.governance_lead == "government":
+                return END_AGING_OUT_UNDER_STATE_MANAGEMENT
             return END_SAFE_BUT_PETLIKE_DRIFT
 
         if not state.unaligned_escape:
             if (state.feudalism_index >= HIGH or
                 state.private_asi_control >= HIGH or
                 state.asi_tool_obedience >= HIGH):
+                if state.rival_power_balance != "sole_winner":
+                    return END_RIVAL_GIANTS_CONTINUE_FIGHTING
                 return END_TECHNO_FEUDALISM
             return END_HIGH_RISK_CONTAINMENT_CRISIS
 

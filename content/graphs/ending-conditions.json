@@ -61,15 +61,37 @@
       "kind": "decision"
     },
     {
+      "id": "mid-cev-governance",
+      "label": "中 CEV 后的主导者",
+      "kind": "decision"
+    },
+    {
       "id": "exclusive-tool",
       "label": "少数人独占 / 听话工具化",
       "kind": "decision"
     },
     {
+      "id": "feudalism-mode",
+      "label": "技术封建表现型",
+      "kind": "decision"
+    },
+    {
       "id": "feudalism",
-      "label": "技术封建主义",
+      "label": "温和技术封建",
       "kind": "ending-bad",
       "href": "narrative/endings/tech-feudalism"
+    },
+    {
+      "id": "violent-feudalism",
+      "label": "暴力技术封建",
+      "kind": "ending-bad",
+      "href": "narrative/endings/tech-feudalism"
+    },
+    {
+      "id": "armed-collapse",
+      "label": "武力夺权 / 巨头混战",
+      "kind": "ending-bad",
+      "href": "narrative/endings/collapse"
     },
     {
       "id": "unsafe-escape",
@@ -81,6 +103,12 @@
       "label": "人类宠物化保护区",
       "kind": "ending-ambiguous",
       "href": "narrative/endings/pet-protectorate"
+    },
+    {
+      "id": "aging-out",
+      "label": "政府主导熬老头",
+      "kind": "ending-ambiguous",
+      "href": "narrative/endings/aging-out"
     },
     {
       "id": "extinction",
@@ -142,8 +170,18 @@
     },
     {
       "from": "cev-level",
-      "to": "pet-protectorate",
+      "to": "mid-cev-governance",
       "label": "CEV 中"
+    },
+    {
+      "from": "mid-cev-governance",
+      "to": "pet-protectorate",
+      "label": "ASI 主导"
+    },
+    {
+      "from": "mid-cev-governance",
+      "to": "aging-out",
+      "label": "政府主导"
     },
     {
       "from": "cev-level",
@@ -157,8 +195,23 @@
     },
     {
       "from": "exclusive-tool",
-      "to": "feudalism",
+      "to": "feudalism-mode",
       "label": "独占或工具化"
+    },
+    {
+      "from": "feudalism-mode",
+      "to": "feudalism",
+      "label": "温和维稳"
+    },
+    {
+      "from": "feudalism-mode",
+      "to": "violent-feudalism",
+      "label": "自动化武力"
+    },
+    {
+      "from": "feudalism-mode",
+      "to": "armed-collapse",
+      "label": "巨头混战"
     },
     {
       "from": "low-cev-control",
