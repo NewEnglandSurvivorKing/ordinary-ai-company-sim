@@ -40,6 +40,23 @@ configuration:
         highlight: rgba(216, 154, 122, 0.16)
         textHighlight: "#7a5f0088"
 plugins:
+  - source: github:quartz-community/note-properties
+    enabled: true
+    options:
+      includeAll: false
+      includedProperties:
+        - id
+        - status
+        - source
+        - contributors
+        - depends_on
+        - conflicts_with
+        - related_endings
+      excludedProperties: []
+      hidePropertiesView: true
+      delimiters: "---"
+      language: yaml
+    order: 0
   - source: github:quartz-community/created-modified-date
     enabled: true
     options:
