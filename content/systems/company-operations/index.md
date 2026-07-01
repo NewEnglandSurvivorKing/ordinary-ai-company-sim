@@ -12,4 +12,5 @@ tags: [systems, systems/company-operations]
 
 > 收纳公司层面的发布、产品化、商业化和经营动作。
 
+- [[early-game-survival|前期经营资源与百模大战生存]]
 - [[release-and-product|发布、降智、API 与产品策略]]

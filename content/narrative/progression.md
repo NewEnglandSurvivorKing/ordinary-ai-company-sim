@@ -3,12 +3,12 @@ id: NARR-PROGRESSION-001
 title: 剧情推进
 type: narrative-node
 status: canon-draft
-source: [U]
-contributors: [user]
+source: [U, L]
+contributors: [user, "llm:codex"]
 created: 2026-07-02
 updated: 2026-07-02
 tags: [narrative, tutorial]
-depends_on: [RND-SYSTEM-001, EVAL-BENCH-001]
+depends_on: [RND-SYSTEM-001, EVAL-BENCH-001, OPS-EARLY-SURVIVAL-001]
 conflicts_with: []
 related_endings: []
 ---
@@ -16,6 +16,12 @@ related_endings: []
 # 剧情推进
 
 > 收纳主线阶段、教程结束语和关键时代切换文案。
+
+## 教学关卡范围
+
+教学关卡发生在 2020-2022 年。玩家先带一支小型 LLM 团队训练类似 GPT-2 时代的小模型，跑通一次数据、算力、训练、评估和发布判断的基础流程。
+
+这段剧情不负责介绍全部游戏系统。它只让玩家认清前期操作语言：模型不是凭空变强，训练要花钱和时间，数据质量会卡住能力，公开评估和真实能力之间存在缝隙。
 
 ## 教学关卡结束
 

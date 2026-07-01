@@ -14,4 +14,5 @@ tags: [discussions]
 
 - [[99-issue-resolution-map|Issue 合并说明]]
 - [[difficulty-player-assist-rnd-tech-tree|难度分层、玩家辅助与研发科技树随机性]]
+- [[info-wiki-tech-tree-hints|游戏内 wiki、信息解锁与科技树提示]]
 - [[issue-0014-ending-branch-refinement|结局分支细化、技术封建表现型与国别基础变量]]

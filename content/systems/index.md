@@ -29,6 +29,7 @@ tags: [systems]
 ## 公司经营
 
 - [[company-operations/index|公司经营]]
+- [[early-game-survival|前期经营资源与百模大战生存]]
 - [[release-and-product|发布、降智、API 与产品策略]]
 
 ## 剧情接口
