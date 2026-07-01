@@ -1,0 +1,56 @@
+{
+  "name": "readable-graph",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./index.js",
+  "scripts": {
+    "build": "node -e \"process.exit(0)\""
+  },
+  "exports": {
+    ".": "./index.js",
+    "./components": "./components/index.js"
+  },
+  "quartz": {
+    "name": "readable-graph",
+    "displayName": "Readable Graph",
+    "category": "component",
+    "quartzVersion": ">=5.0.0",
+    "defaultEnabled": true,
+    "defaultOptions": {
+      "localGraph": {
+        "depth": 1,
+        "repelForce": 0.95,
+        "centerForce": 0.22,
+        "linkDistance": 64,
+        "fontSize": 10,
+        "labelDensity": 0.62,
+        "focusOnHover": true
+      },
+      "globalGraph": {
+        "depth": -1,
+        "repelForce": 0.82,
+        "centerForce": 0.18,
+        "linkDistance": 54,
+        "fontSize": 11,
+        "labelDensity": 0.48,
+        "focusOnHover": true,
+        "enableRadial": true
+      }
+    },
+    "components": {
+      "Graph": {
+        "displayName": "ReadableGraph",
+        "defaultPosition": "right",
+        "defaultPriority": 40
+      }
+    },
+    "optionSchema": {
+      "localGraph": {
+        "type": "object"
+      },
+      "globalGraph": {
+        "type": "object"
+      }
+    }
+  }
+}
