@@ -1,16 +1,29 @@
 ---
+
 id: MACRO-TEP-001
+
 title: 跨奇点技术—经济—政治粗粒度模型
+
 type: design-node
+
 status: canon-draft
+
 source: [U, L]
-contributors: [灵乌路空, Flantern, 某种有机智能, 安蒂侨钚嗣, llm:gpt-5.5]
+
+contributors: [灵乌路空, Flantern, 某种有机智能, 安蒂侨钚嗣, Asdika, "小型青蛙", EDLSDPSY, "Sunbread OverClock", "如更云如更", "海胆", llm:gpt-5.5]
+
 created: 2026-07-01
+
 updated: 2026-07-01
+
 tags: [systems/macro-econ-politics, economy, politics]
+
 depends_on: [RND-SYSTEM-001, ECON-POWER-001]
+
 conflicts_with: []
+
 related_endings: [END-TECH-FEUDALISM, END-VIOLENT-FEUDAL-WAR, END-COLLAPSE, END-AGING-OUT, END-RESPECTED-TRANSITIONER]
+
 ---
 
 # 跨奇点技术—经济—政治粗粒度模型
@@ -42,6 +55,8 @@ related_endings: [END-TECH-FEUDALISM, END-VIOLENT-FEUDAL-WAR, END-COLLAPSE, END-
 - `ai_capability_index`：AI 实际能力。
 - `capability_visibility`：社会能否看见真实能力。
 - `market_hype`：资本市场叙事强度。
+- `competitor_pool`：同行存活量。
+-  `dynamic_funding_pool`：动态资金池，限制最终同行存活数量。
 - `labor_substitution_pressure`：劳动替代压力。
 - `labor_bargaining_power`：人类劳动力价值和议价权。AGI / ASI 能力越高，该变量越容易下降，并推动技术封建主义风险上升。
 - `manager_overtrust`：管理层对 AI 的过度信任。
@@ -52,7 +67,9 @@ related_endings: [END-TECH-FEUDALISM, END-VIOLENT-FEUDAL-WAR, END-COLLAPSE, END-
 - `regulatory_capture`：监管被企业塑形程度。
 - `social_trust`：社会信任。
 - `macro_collapse_risk`：宏观崩溃风险。
-- `jurisdiction_profile`：国别 / 法域配置。CN、US 等环境在融资渠道、政府订单、资本管制、模型禁令、国家安全绑定和产业政策上不一样。
+- `world_tension`：世界紧张度。阵营差距过大导致世界紧张度上升，可能出现个别公司、政府的不理性行为，可能导向金融危机、AI军事化、超限战，需要玩家平衡阵营间差距。
+- `jurisdiction_profile`：国别 / 法域配置。CN、US 等环境在融资渠道、政府订单、资本管制、模型禁令、国家安全绑定、基础建设
+  和产业政策上不一样。
 - `exchange_rate_pressure`：汇率压力，尤其 RMB 对美元的变化怎样影响进口算力、海外云资源、美元融资和国内成本。
 - `state_capacity`：政府执行力、行政协调能力和公共托管能力。它影响 [[aging-out|政府主导的熬老头结局]]、公共算力和技术治理接管官僚体系的可行性。
 - `military_security_binding`：公司被军政、国防、安全合同和关键基础设施绑定的程度。

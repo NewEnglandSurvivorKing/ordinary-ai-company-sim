@@ -1,13 +1,23 @@
 ---
+
 id: CORE-OVERVIEW-001
+
 title: 项目总览
+
 type: overview
+
 status: canon-draft
+
 source: [U, L]
+
 contributors: [user, llm:gpt-5.5]
+
 created: 2026-07-01
+
 updated: 2026-07-02
+
 tags: [core, overview]
+
 ---
 
 # 项目总览
@@ -44,3 +54,4 @@ tags: [core, overview]
 - [[narrative/index|剧情与结局]]
 - [[discussions/index|讨论与 issue 暂存]]
 - [[01-collaboration-guide|协作规范]]
+
